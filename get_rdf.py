@@ -76,7 +76,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Extract RDF about an ApiNATOMY model.')
     parser.add_argument('--model', required=True,
                         help='name of ApiNATOMY model')
-    parser.add_argument('source', metavar='JSON',
+    parser.add_argument('--source', metavar='JSON',
                         help='JSON file resulting from a SciCrunch query')
     args = parser.parse_args()
 
