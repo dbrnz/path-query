@@ -165,6 +165,12 @@ def trace_route(neuron, nodes, objects, pair_rel, graph):
 
 def main(soma_processes_file=None, verbose=False):
 
+    import plotly.graph_objects as go
+    import dash
+    import dash_core_components as dcc
+    import dash_html_components as html
+    from addEdge import addEdge
+
     if verbose:
         print("Soma process filename: " + soma_processes_file)
 
@@ -251,12 +257,6 @@ def main(soma_processes_file=None, verbose=False):
                 trace_route(neuron, nodes, objects, pair_rel, graph)
             if neuron == 'https://apinatomy.org/uris/models/keast-bladder/ids/sn-img_3':
                 trace_route(neuron, nodes, objects, pair_rel, graph)
-
-    import plotly.graph_objects as go
-    import dash
-    import dash_core_components as dcc
-    import dash_html_components as html
-    from addEdge import addEdge
 
     # Controls for how the graph is drawn
     nodeColor = 'Blue'
