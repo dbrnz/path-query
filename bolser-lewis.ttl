@@ -1,0 +1,1219 @@
+@base <https://apinatomy.org/uris/models/bolser-lewis> .
+@prefix FMA: <http://purl.org/sig/ont/fma/fma> .
+@prefix ILX: <http://uri.interlex.org/base/ilx_> .
+@prefix NCBITaxon: <http://purl.obolibrary.org/obo/NCBITaxon_> .
+@prefix NLX: <http://uri.neuinfo.org/nif/nifstd/nlx_> .
+@prefix UBERON: <http://purl.obolibrary.org/obo/UBERON_> .
+@prefix apinatomy: <https://apinatomy.org/uris/readable/> .
+
+NLX:154731 apinatomy:annotates </ids/soma107in214>,
+        </ids/soma202>,
+        </ids/soma220_1>,
+        </ids/soma220_10>,
+        </ids/soma220_11>,
+        </ids/soma220_12>,
+        </ids/soma220_13>,
+        </ids/soma220_14>,
+        </ids/soma220_15>,
+        </ids/soma220_16>,
+        </ids/soma220_17>,
+        </ids/soma220_2>,
+        </ids/soma220_3>,
+        </ids/soma220_4>,
+        </ids/soma220_5>,
+        </ids/soma220_6>,
+        </ids/soma220_7>,
+        </ids/soma220_8>,
+        </ids/soma220_9>,
+        </ids/soma228>,
+        </ids/soma248_1>,
+        </ids/soma248_2>,
+        </ids/soma249_1>,
+        </ids/soma249_2>,
+        </ids/soma249_3>,
+        </ids/soma262>,
+        </ids/soma264>,
+        </ids/soma265>,
+        </ids/soma266> .
+
+</ids/200> apinatomy:external NCBITaxon:99999,
+        UBERON:0001894,
+        ILX:0103217 .
+
+</ids/203> apinatomy:external UBERON:0001891,
+        ILX:0106935 .
+
+</ids/204> apinatomy:external UBERON:0000988,
+        ILX:0109019 .
+
+</ids/205> apinatomy:external UBERON:0001896,
+        ILX:0738301 .
+
+</ids/206> apinatomy:external UBERON:0006469 .
+
+</ids/207> apinatomy:external UBERON:0006489 .
+
+</ids/208> apinatomy:external UBERON:0006488 .
+
+</ids/209> apinatomy:external UBERON:0006490 .
+
+</ids/210> apinatomy:external UBERON:0006491 .
+
+</ids/211> apinatomy:external UBERON:0006492 .
+
+</ids/212> apinatomy:external UBERON:0006493 .
+
+</ids/213> apinatomy:external UBERON:0006470 .
+
+</ids/214> apinatomy:external UBERON:0006457 .
+
+</ids/217> apinatomy:external FMA:6474 .
+
+</ids/218> apinatomy:external UBERON:0002440,
+        ILX:0734766 .
+
+</ids/219> apinatomy:external UBERON:0001990,
+        ILX:0726454 .
+
+</ids/220> apinatomy:external UBERON:0001989,
+        ILX:0725956 .
+
+</ids/221> apinatomy:external UBERON:0001737,
+        ILX:0727818 .
+
+</ids/222> apinatomy:external UBERON:0003126,
+        ILX:0729183 .
+
+</ids/223> apinatomy:external UBERON:0001508,
+        ILX:0738302 .
+
+</ids/224> apinatomy:external UBERON:0010197 .
+
+</ids/225> apinatomy:external UBERON:0001532,
+        ILX:0736647 .
+
+</ids/226> apinatomy:external UBERON:0000388,
+        ILX:0103886 .
+
+</ids/227> apinatomy:external UBERON:0001723,
+        ILX:0111810 .
+
+</ids/230> apinatomy:external FMA:7643 .
+
+</ids/231> apinatomy:external FMA:14056 .
+
+</ids/232> apinatomy:external ILX:0738291 .
+
+</ids/233> apinatomy:external ILX:0738290 .
+
+</ids/234> apinatomy:external ILX:0738292 .
+
+</ids/235> apinatomy:external FMA:6579 .
+
+</ids/236> apinatomy:external ILX:0738293 .
+
+</ids/237> apinatomy:external UBERON:0002024 .
+
+</ids/238> apinatomy:external UBERON:0001884,
+        ILX:0736057 .
+
+</ids/239> apinatomy:external UBERON:0001759,
+        ILX:0733375 .
+
+</ids/240> apinatomy:external UBERON:0001649,
+        ILX:0723837 .
+
+</ids/242> apinatomy:external UBERON:0011326,
+        ILX:0731053 .
+
+</ids/243> apinatomy:external FMA:6243 .
+
+</ids/246> apinatomy:external ILX:0738308 .
+
+</ids/247> apinatomy:external ILX:0738309 .
+
+</ids/250> apinatomy:external ILX:0738312 .
+
+</ids/251> apinatomy:external ILX:0738313 .
+
+</ids/252> apinatomy:external ILX:0738314 .
+
+</ids/253> apinatomy:external ILX:0738315 .
+
+</ids/257> apinatomy:external ILX:0738317 .
+
+</ids/258> apinatomy:external ILX:0738318 .
+
+</ids/260> apinatomy:external ILX:0738319 .
+
+</ids/263> apinatomy:external ILX:0110082 .
+
+</ids/AB-NTS-a_lnk_1> apinatomy:fasciculatesIn </ids/249> ;
+    apinatomy:next </ids/AB-NTS-a_lnk_2> .
+
+</ids/AB-NTS-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_239> ;
+    apinatomy:next </ids/AB-NTS-a_lnk_3> .
+
+</ids/AB-NTS-a_lnk_3> apinatomy:fasciculatesIn </ids/107in205> ;
+    apinatomy:next </ids/AB-NTS-a_lnk_4> .
+
+</ids/AB-NTS-a_lnk_4> apinatomy:fasciculatesIn </ids/262> .
+
+</ids/AB-NTS-d_lnk_1> apinatomy:fasciculatesIn </ids/249> ;
+    apinatomy:next </ids/AB-NTS-d_lnk_2> .
+
+</ids/AB-NTS-d_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_239> ;
+    apinatomy:next </ids/AB-NTS-d_lnk_3> .
+
+</ids/AB-NTS-d_lnk_3> apinatomy:fasciculatesIn </ids/250> ;
+    apinatomy:next </ids/AB-NTS-d_lnk_4> .
+
+</ids/AB-NTS-d_lnk_4> apinatomy:fasciculatesIn </ids/110in223> ;
+    apinatomy:next </ids/AB-NTS-d_lnk_5> .
+
+</ids/AB-NTS-d_lnk_5> apinatomy:fasciculatesIn </ids/254> .
+
+</ids/CB-NTS-a_lnk_1> apinatomy:fasciculatesIn </ids/248> ;
+    apinatomy:next </ids/CB-NTS-a_lnk_2> .
+
+</ids/CB-NTS-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_240> ;
+    apinatomy:next </ids/CB-NTS-a_lnk_3> .
+
+</ids/CB-NTS-a_lnk_3> apinatomy:fasciculatesIn </ids/107in205> ;
+    apinatomy:next </ids/CB-NTS-a_lnk_4> .
+
+</ids/CB-NTS-a_lnk_4> apinatomy:fasciculatesIn </ids/262> .
+
+</ids/CB-NTS-d_lnk_1> apinatomy:fasciculatesIn </ids/248> ;
+    apinatomy:next </ids/CB-NTS-d_lnk_2> .
+
+</ids/CB-NTS-d_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_240> ;
+    apinatomy:next </ids/CB-NTS-d_lnk_3> .
+
+</ids/CB-NTS-d_lnk_3> apinatomy:fasciculatesIn </ids/251> ;
+    apinatomy:next </ids/CB-NTS-d_lnk_4> .
+
+</ids/CB-NTS-d_lnk_4> apinatomy:fasciculatesIn </ids/110in224> ;
+    apinatomy:next </ids/CB-NTS-d_lnk_5> .
+
+</ids/CB-NTS-d_lnk_5> apinatomy:fasciculatesIn </ids/255> .
+
+</ids/CS-NTS-a_lnk_1> apinatomy:fasciculatesIn </ids/248> ;
+    apinatomy:next </ids/CS-NTS-a_lnk_2> .
+
+</ids/CS-NTS-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_240> ;
+    apinatomy:next </ids/CS-NTS-a_lnk_3> .
+
+</ids/CS-NTS-a_lnk_3> apinatomy:fasciculatesIn </ids/107in205> ;
+    apinatomy:next </ids/CS-NTS-a_lnk_4> .
+
+</ids/CS-NTS-a_lnk_4> apinatomy:fasciculatesIn </ids/262> .
+
+</ids/CS-NTS-d_lnk_1> apinatomy:fasciculatesIn </ids/248> ;
+    apinatomy:next </ids/CS-NTS-d_lnk_2> .
+
+</ids/CS-NTS-d_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_240> ;
+    apinatomy:next </ids/CS-NTS-d_lnk_3> .
+
+</ids/CS-NTS-d_lnk_3> apinatomy:fasciculatesIn </ids/252> ;
+    apinatomy:next </ids/CS-NTS-d_lnk_4> .
+
+</ids/CS-NTS-d_lnk_4> apinatomy:fasciculatesIn </ids/110in225> ;
+    apinatomy:next </ids/CS-NTS-d_lnk_5> .
+
+</ids/CS-NTS-d_lnk_5> apinatomy:fasciculatesIn </ids/256> .
+
+</ids/EM-NTS-a_lnk_1> apinatomy:fasciculatesIn </ids/249> ;
+    apinatomy:next </ids/EM-NTS-a_lnk_2> .
+
+</ids/EM-NTS-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_239> ;
+    apinatomy:next </ids/EM-NTS-a_lnk_3> .
+
+</ids/EM-NTS-a_lnk_3> apinatomy:fasciculatesIn </ids/107in205> ;
+    apinatomy:next </ids/EM-NTS-a_lnk_4> .
+
+</ids/EM-NTS-a_lnk_4> apinatomy:fasciculatesIn </ids/262> .
+
+</ids/EM-NTS-d_lnk_1> apinatomy:fasciculatesIn </ids/249> ;
+    apinatomy:next </ids/EM-NTS-d_lnk_2> .
+
+</ids/EM-NTS-d_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_239> ;
+    apinatomy:next </ids/EM-NTS-d_lnk_3> .
+
+</ids/EM-NTS-d_lnk_3> apinatomy:fasciculatesIn </ids/253> ;
+    apinatomy:next </ids/EM-NTS-d_lnk_4> .
+
+</ids/EM-NTS-d_lnk_4> apinatomy:fasciculatesIn </ids/114in226> ;
+    apinatomy:next </ids/EM-NTS-d_lnk_5> .
+
+</ids/EM-NTS-d_lnk_5> apinatomy:fasciculatesIn </ids/258> .
+
+</ids/IML1-SCG-a_lnk_1> apinatomy:fasciculatesIn </ids/228> ;
+    apinatomy:next </ids/IML1-SCG-a_lnk_2> .
+
+</ids/IML1-SCG-a_lnk_10> apinatomy:fasciculatesIn </ids/ref_mat_117_234> ;
+    apinatomy:next </ids/IML1-SCG-a_lnk_11> .
+
+</ids/IML1-SCG-a_lnk_11> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/IML1-SCG-a_lnk_2> apinatomy:fasciculatesIn </ids/107in214> ;
+    apinatomy:next </ids/IML1-SCG-a_lnk_3> .
+
+</ids/IML1-SCG-a_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_117_230> ;
+    apinatomy:next </ids/IML1-SCG-a_lnk_4> .
+
+</ids/IML1-SCG-a_lnk_4> apinatomy:fasciculatesIn </ids/ref_mat_117_231> ;
+    apinatomy:next </ids/IML1-SCG-a_lnk_5> .
+
+</ids/IML1-SCG-a_lnk_5> apinatomy:fasciculatesIn </ids/ref_mat_117_217> ;
+    apinatomy:next </ids/IML1-SCG-a_lnk_6> .
+
+</ids/IML1-SCG-a_lnk_6> apinatomy:fasciculatesIn </ids/ref_mat_117_232> ;
+    apinatomy:next </ids/IML1-SCG-a_lnk_7> .
+
+</ids/IML1-SCG-a_lnk_7> apinatomy:fasciculatesIn </ids/ref_mat_117_218> ;
+    apinatomy:next </ids/IML1-SCG-a_lnk_8> .
+
+</ids/IML1-SCG-a_lnk_8> apinatomy:fasciculatesIn </ids/ref_mat_117_233> ;
+    apinatomy:next </ids/IML1-SCG-a_lnk_9> .
+
+</ids/IML1-SCG-a_lnk_9> apinatomy:fasciculatesIn </ids/ref_mat_117_219> ;
+    apinatomy:next </ids/IML1-SCG-a_lnk_10> .
+
+</ids/IML1-SCG-d_lnk_1> apinatomy:fasciculatesIn </ids/228> .
+
+</ids/LM-NTS-a_lnk_1> apinatomy:fasciculatesIn </ids/249> ;
+    apinatomy:next </ids/LM-NTS-a_lnk_2> .
+
+</ids/LM-NTS-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_239> ;
+    apinatomy:next </ids/LM-NTS-a_lnk_3> .
+
+</ids/LM-NTS-a_lnk_3> apinatomy:fasciculatesIn </ids/107in205> ;
+    apinatomy:next </ids/LM-NTS-a_lnk_4> .
+
+</ids/LM-NTS-a_lnk_4> apinatomy:fasciculatesIn </ids/262> .
+
+</ids/LM-NTS-d_lnk_1> apinatomy:fasciculatesIn </ids/249> ;
+    apinatomy:next </ids/LM-NTS-d_lnk_2> .
+
+</ids/LM-NTS-d_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_239> ;
+    apinatomy:next </ids/LM-NTS-d_lnk_3> .
+
+</ids/LM-NTS-d_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_117_242> ;
+    apinatomy:next </ids/LM-NTS-d_lnk_4> .
+
+</ids/LM-NTS-d_lnk_4> apinatomy:fasciculatesIn </ids/108in221> ;
+    apinatomy:next </ids/LM-NTS-d_lnk_5> .
+
+</ids/LM-NTS-d_lnk_5> apinatomy:fasciculatesIn </ids/257> .
+
+</ids/NTS-IML1-a_lnk_1> apinatomy:fasciculatesIn </ids/262> ;
+    apinatomy:next </ids/NTS-IML1-a_lnk_2> .
+
+</ids/NTS-IML1-a_lnk_10> apinatomy:fasciculatesIn </ids/ref_mat_107_213> ;
+    apinatomy:next </ids/NTS-IML1-a_lnk_11> .
+
+</ids/NTS-IML1-a_lnk_11> apinatomy:fasciculatesIn </ids/107in214> ;
+    apinatomy:next </ids/NTS-IML1-a_lnk_12> .
+
+</ids/NTS-IML1-a_lnk_12> apinatomy:fasciculatesIn </ids/228> .
+
+</ids/NTS-IML1-a_lnk_2> apinatomy:fasciculatesIn </ids/107in205> ;
+    apinatomy:next </ids/NTS-IML1-a_lnk_3> .
+
+</ids/NTS-IML1-a_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_107_206> ;
+    apinatomy:next </ids/NTS-IML1-a_lnk_4> .
+
+</ids/NTS-IML1-a_lnk_4> apinatomy:fasciculatesIn </ids/ref_mat_107_207> ;
+    apinatomy:next </ids/NTS-IML1-a_lnk_5> .
+
+</ids/NTS-IML1-a_lnk_5> apinatomy:fasciculatesIn </ids/ref_mat_107_208> ;
+    apinatomy:next </ids/NTS-IML1-a_lnk_6> .
+
+</ids/NTS-IML1-a_lnk_6> apinatomy:fasciculatesIn </ids/107in209> ;
+    apinatomy:next </ids/NTS-IML1-a_lnk_7> .
+
+</ids/NTS-IML1-a_lnk_7> apinatomy:fasciculatesIn </ids/107in210> ;
+    apinatomy:next </ids/NTS-IML1-a_lnk_8> .
+
+</ids/NTS-IML1-a_lnk_8> apinatomy:fasciculatesIn </ids/ref_mat_107_211> ;
+    apinatomy:next </ids/NTS-IML1-a_lnk_9> .
+
+</ids/NTS-IML1-a_lnk_9> apinatomy:fasciculatesIn </ids/ref_mat_107_212> ;
+    apinatomy:next </ids/NTS-IML1-a_lnk_10> .
+
+</ids/NTS-IML1-d_lnk_1> apinatomy:fasciculatesIn </ids/262> .
+
+</ids/P4-DIAPHRGM-a_lnk_1> apinatomy:fasciculatesIn </ids/265> ;
+    apinatomy:next </ids/P4-DIAPHRGM-a_lnk_2> .
+
+</ids/P4-DIAPHRGM-a_lnk_2> apinatomy:fasciculatesIn </ids/107in209> ;
+    apinatomy:next </ids/P4-DIAPHRGM-a_lnk_3> .
+
+</ids/P4-DIAPHRGM-a_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_117_238> ;
+    apinatomy:next </ids/P4-DIAPHRGM-a_lnk_4> .
+
+</ids/P4-DIAPHRGM-a_lnk_4> apinatomy:fasciculatesIn </ids/261> .
+
+</ids/P4-DIAPHRGM-d_lnk_1> apinatomy:fasciculatesIn </ids/265> .
+
+</ids/P5-DIAPHRGM-a_lnk_1> apinatomy:fasciculatesIn </ids/266> ;
+    apinatomy:next </ids/P5-DIAPHRGM-a_lnk_2> .
+
+</ids/P5-DIAPHRGM-a_lnk_2> apinatomy:fasciculatesIn </ids/107in210> ;
+    apinatomy:next </ids/P5-DIAPHRGM-a_lnk_3> .
+
+</ids/P5-DIAPHRGM-a_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_117_238> ;
+    apinatomy:next </ids/P5-DIAPHRGM-a_lnk_4> .
+
+</ids/P5-DIAPHRGM-a_lnk_4> apinatomy:fasciculatesIn </ids/261> .
+
+</ids/P5-DIAPHRGM-d_lnk_1> apinatomy:fasciculatesIn </ids/266> .
+
+</ids/PVN-IML1-a_lnk_1> apinatomy:fasciculatesIn </ids/202> ;
+    apinatomy:next </ids/PVN-IML1-a_lnk_2> .
+
+</ids/PVN-IML1-a_lnk_10> apinatomy:fasciculatesIn </ids/107in209> ;
+    apinatomy:next </ids/PVN-IML1-a_lnk_11> .
+
+</ids/PVN-IML1-a_lnk_11> apinatomy:fasciculatesIn </ids/107in210> ;
+    apinatomy:next </ids/PVN-IML1-a_lnk_12> .
+
+</ids/PVN-IML1-a_lnk_12> apinatomy:fasciculatesIn </ids/ref_mat_107_211> ;
+    apinatomy:next </ids/PVN-IML1-a_lnk_13> .
+
+</ids/PVN-IML1-a_lnk_13> apinatomy:fasciculatesIn </ids/ref_mat_107_212> ;
+    apinatomy:next </ids/PVN-IML1-a_lnk_14> .
+
+</ids/PVN-IML1-a_lnk_14> apinatomy:fasciculatesIn </ids/ref_mat_107_213> ;
+    apinatomy:next </ids/PVN-IML1-a_lnk_15> .
+
+</ids/PVN-IML1-a_lnk_15> apinatomy:fasciculatesIn </ids/107in214> ;
+    apinatomy:next </ids/PVN-IML1-a_lnk_16> .
+
+</ids/PVN-IML1-a_lnk_16> apinatomy:fasciculatesIn </ids/228> .
+
+</ids/PVN-IML1-a_lnk_2> apinatomy:fasciculatesIn </ids/201> ;
+    apinatomy:next </ids/PVN-IML1-a_lnk_3> .
+
+</ids/PVN-IML1-a_lnk_3> apinatomy:fasciculatesIn </ids/107in200> ;
+    apinatomy:next </ids/PVN-IML1-a_lnk_4> .
+
+</ids/PVN-IML1-a_lnk_4> apinatomy:fasciculatesIn </ids/ref_mat_107_203> ;
+    apinatomy:next </ids/PVN-IML1-a_lnk_5> .
+
+</ids/PVN-IML1-a_lnk_5> apinatomy:fasciculatesIn </ids/ref_mat_107_204> ;
+    apinatomy:next </ids/PVN-IML1-a_lnk_6> .
+
+</ids/PVN-IML1-a_lnk_6> apinatomy:fasciculatesIn </ids/107in205> ;
+    apinatomy:next </ids/PVN-IML1-a_lnk_7> .
+
+</ids/PVN-IML1-a_lnk_7> apinatomy:fasciculatesIn </ids/ref_mat_107_206> ;
+    apinatomy:next </ids/PVN-IML1-a_lnk_8> .
+
+</ids/PVN-IML1-a_lnk_8> apinatomy:fasciculatesIn </ids/ref_mat_107_207> ;
+    apinatomy:next </ids/PVN-IML1-a_lnk_9> .
+
+</ids/PVN-IML1-a_lnk_9> apinatomy:fasciculatesIn </ids/ref_mat_107_208> ;
+    apinatomy:next </ids/PVN-IML1-a_lnk_10> .
+
+</ids/PVN-IML1-d_lnk_1> apinatomy:fasciculatesIn </ids/202> .
+
+</ids/RVLM-IML1-a_lnk_1> apinatomy:fasciculatesIn </ids/264> ;
+    apinatomy:next </ids/RVLM-IML1-a_lnk_2> .
+
+</ids/RVLM-IML1-a_lnk_10> apinatomy:fasciculatesIn </ids/ref_mat_107_213> ;
+    apinatomy:next </ids/RVLM-IML1-a_lnk_11> .
+
+</ids/RVLM-IML1-a_lnk_11> apinatomy:fasciculatesIn </ids/107in214> ;
+    apinatomy:next </ids/RVLM-IML1-a_lnk_12> .
+
+</ids/RVLM-IML1-a_lnk_12> apinatomy:fasciculatesIn </ids/228> .
+
+</ids/RVLM-IML1-a_lnk_2> apinatomy:fasciculatesIn </ids/107in205> ;
+    apinatomy:next </ids/RVLM-IML1-a_lnk_3> .
+
+</ids/RVLM-IML1-a_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_107_206> ;
+    apinatomy:next </ids/RVLM-IML1-a_lnk_4> .
+
+</ids/RVLM-IML1-a_lnk_4> apinatomy:fasciculatesIn </ids/ref_mat_107_207> ;
+    apinatomy:next </ids/RVLM-IML1-a_lnk_5> .
+
+</ids/RVLM-IML1-a_lnk_5> apinatomy:fasciculatesIn </ids/ref_mat_107_208> ;
+    apinatomy:next </ids/RVLM-IML1-a_lnk_6> .
+
+</ids/RVLM-IML1-a_lnk_6> apinatomy:fasciculatesIn </ids/107in209> ;
+    apinatomy:next </ids/RVLM-IML1-a_lnk_7> .
+
+</ids/RVLM-IML1-a_lnk_7> apinatomy:fasciculatesIn </ids/107in210> ;
+    apinatomy:next </ids/RVLM-IML1-a_lnk_8> .
+
+</ids/RVLM-IML1-a_lnk_8> apinatomy:fasciculatesIn </ids/ref_mat_107_211> ;
+    apinatomy:next </ids/RVLM-IML1-a_lnk_9> .
+
+</ids/RVLM-IML1-a_lnk_9> apinatomy:fasciculatesIn </ids/ref_mat_107_212> ;
+    apinatomy:next </ids/RVLM-IML1-a_lnk_10> .
+
+</ids/RVLM-IML1-d_lnk_1> apinatomy:fasciculatesIn </ids/264> .
+
+</ids/SCG-AB-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-AB-a_lnk_2> .
+
+</ids/SCG-AB-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_234> ;
+    apinatomy:next </ids/SCG-AB-a_lnk_3> .
+
+</ids/SCG-AB-a_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_117_219> ;
+    apinatomy:next </ids/SCG-AB-a_lnk_4> .
+
+</ids/SCG-AB-a_lnk_4> apinatomy:fasciculatesIn </ids/ref_mat_117_233> ;
+    apinatomy:next </ids/SCG-AB-a_lnk_5> .
+
+</ids/SCG-AB-a_lnk_5> apinatomy:fasciculatesIn </ids/ref_mat_117_218> ;
+    apinatomy:next </ids/SCG-AB-a_lnk_6> .
+
+</ids/SCG-AB-a_lnk_6> apinatomy:fasciculatesIn </ids/110in223> ;
+    apinatomy:next </ids/SCG-AB-a_lnk_7> .
+
+</ids/SCG-AB-a_lnk_7> apinatomy:fasciculatesIn </ids/254> .
+
+</ids/SCG-AB-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/SCG-CB-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-CB-a_lnk_2> .
+
+</ids/SCG-CB-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_235> ;
+    apinatomy:next </ids/SCG-CB-a_lnk_3> .
+
+</ids/SCG-CB-a_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_117_236> ;
+    apinatomy:next </ids/SCG-CB-a_lnk_4> .
+
+</ids/SCG-CB-a_lnk_4> apinatomy:fasciculatesIn </ids/110in224> ;
+    apinatomy:next </ids/SCG-CB-a_lnk_5> .
+
+</ids/SCG-CB-a_lnk_5> apinatomy:fasciculatesIn </ids/255> .
+
+</ids/SCG-CB-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/SCG-CS-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-CS-a_lnk_2> .
+
+</ids/SCG-CS-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_235> ;
+    apinatomy:next </ids/SCG-CS-a_lnk_3> .
+
+</ids/SCG-CS-a_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_117_236> ;
+    apinatomy:next </ids/SCG-CS-a_lnk_4> .
+
+</ids/SCG-CS-a_lnk_4> apinatomy:fasciculatesIn </ids/110in225> ;
+    apinatomy:next </ids/SCG-CS-a_lnk_5> .
+
+</ids/SCG-CS-a_lnk_5> apinatomy:fasciculatesIn </ids/256> .
+
+</ids/SCG-CS-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/SCG-ECN-TONG-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-ECN-TONG-a_lnk_2> .
+
+</ids/SCG-ECN-TONG-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_235> ;
+    apinatomy:next </ids/SCG-ECN-TONG-a_lnk_3> .
+
+</ids/SCG-ECN-TONG-a_lnk_3> apinatomy:fasciculatesIn </ids/112in227> .
+
+</ids/SCG-ECN-TONG-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/SCG-ICN-TONG-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-ICN-TONG-a_lnk_2> .
+
+</ids/SCG-ICN-TONG-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_237> ;
+    apinatomy:next </ids/SCG-ICN-TONG-a_lnk_3> .
+
+</ids/SCG-ICN-TONG-a_lnk_3> apinatomy:fasciculatesIn </ids/112in227> .
+
+</ids/SCG-ICN-TONG-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/SCG-ICN-TRCHA-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-ICN-TRCHA-a_lnk_2> .
+
+</ids/SCG-ICN-TRCHA-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_237> ;
+    apinatomy:next </ids/SCG-ICN-TRCHA-a_lnk_3> .
+
+</ids/SCG-ICN-TRCHA-a_lnk_3> apinatomy:fasciculatesIn </ids/109in222> .
+
+</ids/SCG-ICN-TRCHA-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/SCG-NTS-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-NTS-a_lnk_2> .
+
+</ids/SCG-NTS-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_237> ;
+    apinatomy:next </ids/SCG-NTS-a_lnk_3> .
+
+</ids/SCG-NTS-a_lnk_3> apinatomy:fasciculatesIn </ids/107in205> ;
+    apinatomy:next </ids/SCG-NTS-a_lnk_4> .
+
+</ids/SCG-NTS-a_lnk_4> apinatomy:fasciculatesIn </ids/262> .
+
+</ids/SCG-NTS-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/SCG-PVN-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-PVN-a_lnk_2> .
+
+</ids/SCG-PVN-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_237> ;
+    apinatomy:next </ids/SCG-PVN-a_lnk_3> .
+
+</ids/SCG-PVN-a_lnk_3> apinatomy:fasciculatesIn </ids/107in200> ;
+    apinatomy:next </ids/SCG-PVN-a_lnk_4> .
+
+</ids/SCG-PVN-a_lnk_4> apinatomy:fasciculatesIn </ids/201> ;
+    apinatomy:next </ids/SCG-PVN-a_lnk_5> .
+
+</ids/SCG-PVN-a_lnk_5> apinatomy:fasciculatesIn </ids/202> .
+
+</ids/SCG-PVN-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/SCG-RTRPZ-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-RTRPZ-a_lnk_2> .
+
+</ids/SCG-RTRPZ-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_237> ;
+    apinatomy:next </ids/SCG-RTRPZ-a_lnk_3> .
+
+</ids/SCG-RTRPZ-a_lnk_3> apinatomy:fasciculatesIn </ids/107in205> ;
+    apinatomy:next </ids/SCG-RTRPZ-a_lnk_4> .
+
+</ids/SCG-RTRPZ-a_lnk_4> apinatomy:fasciculatesIn </ids/263> .
+
+</ids/SCG-RTRPZ-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/SCG-RVLM-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-RVLM-a_lnk_2> .
+
+</ids/SCG-RVLM-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_237> ;
+    apinatomy:next </ids/SCG-RVLM-a_lnk_3> .
+
+</ids/SCG-RVLM-a_lnk_3> apinatomy:fasciculatesIn </ids/107in205> ;
+    apinatomy:next </ids/SCG-RVLM-a_lnk_4> .
+
+</ids/SCG-RVLM-a_lnk_4> apinatomy:fasciculatesIn </ids/264> .
+
+</ids/SCG-RVLM-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/SCG-TRCHA-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-TRCHA-a_lnk_2> .
+
+</ids/SCG-TRCHA-a_lnk_2> apinatomy:fasciculatesIn </ids/109in222> .
+
+</ids/SCG-TRCHA-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/SCG-eILN-EM-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-eILN-EM-a_lnk_2> .
+
+</ids/SCG-eILN-EM-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_235> ;
+    apinatomy:next </ids/SCG-eILN-EM-a_lnk_3> .
+
+</ids/SCG-eILN-EM-a_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_117_239> ;
+    apinatomy:next </ids/SCG-eILN-EM-a_lnk_4> .
+
+</ids/SCG-eILN-EM-a_lnk_4> apinatomy:fasciculatesIn </ids/245> ;
+    apinatomy:next </ids/SCG-eILN-EM-a_lnk_5> .
+
+</ids/SCG-eILN-EM-a_lnk_5> apinatomy:fasciculatesIn </ids/246> ;
+    apinatomy:next </ids/SCG-eILN-EM-a_lnk_6> .
+
+</ids/SCG-eILN-EM-a_lnk_6> apinatomy:fasciculatesIn </ids/114in226> .
+
+</ids/SCG-eILN-EM-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/SCG-eSLN-EM-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-eSLN-EM-a_lnk_2> .
+
+</ids/SCG-eSLN-EM-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_235> ;
+    apinatomy:next </ids/SCG-eSLN-EM-a_lnk_3> .
+
+</ids/SCG-eSLN-EM-a_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_117_239> ;
+    apinatomy:next </ids/SCG-eSLN-EM-a_lnk_4> .
+
+</ids/SCG-eSLN-EM-a_lnk_4> apinatomy:fasciculatesIn </ids/ref_mat_117_242> ;
+    apinatomy:next </ids/SCG-eSLN-EM-a_lnk_5> .
+
+</ids/SCG-eSLN-EM-a_lnk_5> apinatomy:fasciculatesIn </ids/ref_mat_117_243> ;
+    apinatomy:next </ids/SCG-eSLN-EM-a_lnk_6> .
+
+</ids/SCG-eSLN-EM-a_lnk_6> apinatomy:fasciculatesIn </ids/114in226> .
+
+</ids/SCG-eSLN-EM-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/SCG-eSLN-LRYNX-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-eSLN-LRYNX-a_lnk_2> .
+
+</ids/SCG-eSLN-LRYNX-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_235> ;
+    apinatomy:next </ids/SCG-eSLN-LRYNX-a_lnk_3> .
+
+</ids/SCG-eSLN-LRYNX-a_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_117_239> ;
+    apinatomy:next </ids/SCG-eSLN-LRYNX-a_lnk_4> .
+
+</ids/SCG-eSLN-LRYNX-a_lnk_4> apinatomy:fasciculatesIn </ids/ref_mat_117_242> ;
+    apinatomy:next </ids/SCG-eSLN-LRYNX-a_lnk_5> .
+
+</ids/SCG-eSLN-LRYNX-a_lnk_5> apinatomy:fasciculatesIn </ids/ref_mat_117_243> ;
+    apinatomy:next </ids/SCG-eSLN-LRYNX-a_lnk_6> .
+
+</ids/SCG-eSLN-LRYNX-a_lnk_6> apinatomy:fasciculatesIn </ids/108in221> .
+
+</ids/SCG-eSLN-LRYNX-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/SCG-iILN-EM-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-iILN-EM-a_lnk_2> .
+
+</ids/SCG-iILN-EM-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_235> ;
+    apinatomy:next </ids/SCG-iILN-EM-a_lnk_3> .
+
+</ids/SCG-iILN-EM-a_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_117_239> ;
+    apinatomy:next </ids/SCG-iILN-EM-a_lnk_4> .
+
+</ids/SCG-iILN-EM-a_lnk_4> apinatomy:fasciculatesIn </ids/245> ;
+    apinatomy:next </ids/SCG-iILN-EM-a_lnk_5> .
+
+</ids/SCG-iILN-EM-a_lnk_5> apinatomy:fasciculatesIn </ids/247> ;
+    apinatomy:next </ids/SCG-iILN-EM-a_lnk_6> .
+
+</ids/SCG-iILN-EM-a_lnk_6> apinatomy:fasciculatesIn </ids/114in226> .
+
+</ids/SCG-iILN-EM-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/SCG-iSLN-EM-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-iSLN-EM-a_lnk_2> .
+
+</ids/SCG-iSLN-EM-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_235> ;
+    apinatomy:next </ids/SCG-iSLN-EM-a_lnk_3> .
+
+</ids/SCG-iSLN-EM-a_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_117_239> ;
+    apinatomy:next </ids/SCG-iSLN-EM-a_lnk_4> .
+
+</ids/SCG-iSLN-EM-a_lnk_4> apinatomy:fasciculatesIn </ids/ref_mat_117_242> ;
+    apinatomy:next </ids/SCG-iSLN-EM-a_lnk_5> .
+
+</ids/SCG-iSLN-EM-a_lnk_5> apinatomy:fasciculatesIn </ids/244> ;
+    apinatomy:next </ids/SCG-iSLN-EM-a_lnk_6> .
+
+</ids/SCG-iSLN-EM-a_lnk_6> apinatomy:fasciculatesIn </ids/114in226> .
+
+</ids/SCG-iSLN-EM-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/SCG-iSLN-LRYNX-a_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> ;
+    apinatomy:next </ids/SCG-iSLN-LRYNX-a_lnk_2> .
+
+</ids/SCG-iSLN-LRYNX-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_235> ;
+    apinatomy:next </ids/SCG-iSLN-LRYNX-a_lnk_3> .
+
+</ids/SCG-iSLN-LRYNX-a_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_117_239> ;
+    apinatomy:next </ids/SCG-iSLN-LRYNX-a_lnk_4> .
+
+</ids/SCG-iSLN-LRYNX-a_lnk_4> apinatomy:fasciculatesIn </ids/ref_mat_117_242> ;
+    apinatomy:next </ids/SCG-iSLN-LRYNX-a_lnk_5> .
+
+</ids/SCG-iSLN-LRYNX-a_lnk_5> apinatomy:fasciculatesIn </ids/244> ;
+    apinatomy:next </ids/SCG-iSLN-LRYNX-a_lnk_6> .
+
+</ids/SCG-iSLN-LRYNX-a_lnk_6> apinatomy:fasciculatesIn </ids/108in221> .
+
+</ids/SCG-iSLN-LRYNX-d_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_117_220> .
+
+</ids/T1-INTERCOSTAL-a_lnk_1> apinatomy:fasciculatesIn </ids/107in214> ;
+    apinatomy:next </ids/T1-INTERCOSTAL-a_lnk_2> .
+
+</ids/T1-INTERCOSTAL-a_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_117_230> ;
+    apinatomy:next </ids/T1-INTERCOSTAL-a_lnk_3> .
+
+</ids/T1-INTERCOSTAL-a_lnk_3> apinatomy:fasciculatesIn </ids/260> .
+
+</ids/T1-INTERCOSTAL-d_lnk_1> apinatomy:fasciculatesIn </ids/107in214> .
+
+</ids/mat_108> apinatomy:external FMA:64182 .
+
+</ids/mat_109> apinatomy:external FMA:7470 .
+
+</ids/mat_112> apinatomy:external FMA:54807 .
+
+</ids/mat_114> apinatomy:external UBERON:0004982 .
+
+</ids/new-253> apinatomy:source </ids/s202> ;
+    apinatomy:target </ids/t202> .
+
+</ids/new-254> apinatomy:source </ids/s228> ;
+    apinatomy:target </ids/t228> .
+
+</ids/new-255> apinatomy:source </ids/s107in214> ;
+    apinatomy:target </ids/t107in214> .
+
+</ids/new-256> apinatomy:source </ids/s265> ;
+    apinatomy:target </ids/t265> .
+
+</ids/new-257> apinatomy:source </ids/s266> ;
+    apinatomy:target </ids/t266> .
+
+</ids/new-258> apinatomy:source </ids/s262> ;
+    apinatomy:target </ids/t262> .
+
+</ids/new-259> apinatomy:source </ids/s264> ;
+    apinatomy:target </ids/t264> .
+
+</ids/new-260> apinatomy:source </ids/s249_1> ;
+    apinatomy:target </ids/t249_1> .
+
+</ids/new-261> apinatomy:source </ids/s249_2> ;
+    apinatomy:target </ids/t249_2> .
+
+</ids/new-262> apinatomy:source </ids/s249_3> ;
+    apinatomy:target </ids/t249_3> .
+
+</ids/new-263> apinatomy:source </ids/s248_1> ;
+    apinatomy:target </ids/t248_1> .
+
+</ids/new-264> apinatomy:source </ids/s248_2> ;
+    apinatomy:target </ids/t248_2> .
+
+</ids/new-265> apinatomy:source </ids/s220_1> ;
+    apinatomy:target </ids/t220_1> .
+
+</ids/new-266> apinatomy:source </ids/s220_2> ;
+    apinatomy:target </ids/t220_2> .
+
+</ids/new-267> apinatomy:source </ids/s220_3> ;
+    apinatomy:target </ids/t220_3> .
+
+</ids/new-268> apinatomy:source </ids/s220_4> ;
+    apinatomy:target </ids/t220_4> .
+
+</ids/new-269> apinatomy:source </ids/s220_5> ;
+    apinatomy:target </ids/t220_5> .
+
+</ids/new-270> apinatomy:source </ids/s220_6> ;
+    apinatomy:target </ids/t220_6> .
+
+</ids/new-271> apinatomy:source </ids/s220_7> ;
+    apinatomy:target </ids/t220_7> .
+
+</ids/new-272> apinatomy:source </ids/s220_8> ;
+    apinatomy:target </ids/t220_8> .
+
+</ids/new-273> apinatomy:source </ids/s220_9> ;
+    apinatomy:target </ids/t220_9> .
+
+</ids/new-274> apinatomy:source </ids/s220_10> ;
+    apinatomy:target </ids/t220_10> .
+
+</ids/new-275> apinatomy:source </ids/s220_11> ;
+    apinatomy:target </ids/t220_11> .
+
+</ids/new-276> apinatomy:source </ids/s220_12> ;
+    apinatomy:target </ids/t220_12> .
+
+</ids/new-277> apinatomy:source </ids/s220_13> ;
+    apinatomy:target </ids/t220_13> .
+
+</ids/new-278> apinatomy:source </ids/s220_14> ;
+    apinatomy:target </ids/t220_14> .
+
+</ids/new-279> apinatomy:source </ids/s220_15> ;
+    apinatomy:target </ids/t220_15> .
+
+</ids/new-280> apinatomy:source </ids/s220_16> ;
+    apinatomy:target </ids/t220_16> .
+
+</ids/new-281> apinatomy:source </ids/s220_17> ;
+    apinatomy:target </ids/t220_17> .
+
+</ids/ref_mat_107_203> apinatomy:layerIn </ids/203> ;
+    apinatomy:supertype </ids/mat_107> .
+
+</ids/ref_mat_107_204> apinatomy:layerIn </ids/204> ;
+    apinatomy:supertype </ids/mat_107> .
+
+</ids/ref_mat_117_217> apinatomy:layerIn </ids/217> ;
+    apinatomy:supertype </ids/mat_117> .
+
+</ids/ref_mat_117_231> apinatomy:layerIn </ids/231> ;
+    apinatomy:supertype </ids/mat_117> .
+
+</ids/ref_mat_117_232> apinatomy:layerIn </ids/232> ;
+    apinatomy:supertype </ids/mat_117> .
+
+</ids/s107in214> apinatomy:rootOf </ids/T1-INTERCOSTAL-d> ;
+    apinatomy:sourceOf </ids/T1-INTERCOSTAL-d_lnk_1> .
+
+</ids/s202> apinatomy:rootOf </ids/PVN-IML1-d> ;
+    apinatomy:sourceOf </ids/PVN-IML1-d_lnk_1> .
+
+</ids/s220_1> apinatomy:rootOf </ids/SCG-AB-d> ;
+    apinatomy:sourceOf </ids/SCG-AB-d_lnk_1> .
+
+</ids/s220_10> apinatomy:rootOf </ids/SCG-ECN-TONG-d> ;
+    apinatomy:sourceOf </ids/SCG-ECN-TONG-d_lnk_1> .
+
+</ids/s220_11> apinatomy:rootOf </ids/SCG-ICN-TONG-d> ;
+    apinatomy:sourceOf </ids/SCG-ICN-TONG-d_lnk_1> .
+
+</ids/s220_12> apinatomy:rootOf </ids/SCG-TRCHA-d> ;
+    apinatomy:sourceOf </ids/SCG-TRCHA-d_lnk_1> .
+
+</ids/s220_13> apinatomy:rootOf </ids/SCG-ICN-TRCHA-d> ;
+    apinatomy:sourceOf </ids/SCG-ICN-TRCHA-d_lnk_1> .
+
+</ids/s220_14> apinatomy:rootOf </ids/SCG-PVN-d> ;
+    apinatomy:sourceOf </ids/SCG-PVN-d_lnk_1> .
+
+</ids/s220_15> apinatomy:rootOf </ids/SCG-RTRPZ-d> ;
+    apinatomy:sourceOf </ids/SCG-RTRPZ-d_lnk_1> .
+
+</ids/s220_16> apinatomy:rootOf </ids/SCG-RVLM-d> ;
+    apinatomy:sourceOf </ids/SCG-RVLM-d_lnk_1> .
+
+</ids/s220_17> apinatomy:rootOf </ids/SCG-NTS-d> ;
+    apinatomy:sourceOf </ids/SCG-NTS-d_lnk_1> .
+
+</ids/s220_2> apinatomy:rootOf </ids/SCG-CB-d> ;
+    apinatomy:sourceOf </ids/SCG-CB-d_lnk_1> .
+
+</ids/s220_3> apinatomy:rootOf </ids/SCG-CS-d> ;
+    apinatomy:sourceOf </ids/SCG-CS-d_lnk_1> .
+
+</ids/s220_4> apinatomy:rootOf </ids/SCG-eSLN-LRYNX-d> ;
+    apinatomy:sourceOf </ids/SCG-eSLN-LRYNX-d_lnk_1> .
+
+</ids/s220_5> apinatomy:rootOf </ids/SCG-iSLN-LRYNX-d> ;
+    apinatomy:sourceOf </ids/SCG-iSLN-LRYNX-d_lnk_1> .
+
+</ids/s220_6> apinatomy:rootOf </ids/SCG-eSLN-EM-d> ;
+    apinatomy:sourceOf </ids/SCG-eSLN-EM-d_lnk_1> .
+
+</ids/s220_7> apinatomy:rootOf </ids/SCG-iSLN-EM-d> ;
+    apinatomy:sourceOf </ids/SCG-iSLN-EM-d_lnk_1> .
+
+</ids/s220_8> apinatomy:rootOf </ids/SCG-eILN-EM-d> ;
+    apinatomy:sourceOf </ids/SCG-eILN-EM-d_lnk_1> .
+
+</ids/s220_9> apinatomy:rootOf </ids/SCG-iILN-EM-d> ;
+    apinatomy:sourceOf </ids/SCG-iILN-EM-d_lnk_1> .
+
+</ids/s228> apinatomy:rootOf </ids/IML1-SCG-d> ;
+    apinatomy:sourceOf </ids/IML1-SCG-d_lnk_1> .
+
+</ids/s248_1> apinatomy:rootOf </ids/CB-NTS-d> ;
+    apinatomy:sourceOf </ids/CB-NTS-d_lnk_1> .
+
+</ids/s248_2> apinatomy:rootOf </ids/CS-NTS-d> ;
+    apinatomy:sourceOf </ids/CS-NTS-d_lnk_1> .
+
+</ids/s249_1> apinatomy:rootOf </ids/AB-NTS-d> ;
+    apinatomy:sourceOf </ids/AB-NTS-d_lnk_1> .
+
+</ids/s249_2> apinatomy:rootOf </ids/LM-NTS-d> ;
+    apinatomy:sourceOf </ids/LM-NTS-d_lnk_1> .
+
+</ids/s249_3> apinatomy:rootOf </ids/EM-NTS-d> ;
+    apinatomy:sourceOf </ids/EM-NTS-d_lnk_1> .
+
+</ids/s262> apinatomy:rootOf </ids/NTS-IML1-d> ;
+    apinatomy:sourceOf </ids/NTS-IML1-d_lnk_1> .
+
+</ids/s264> apinatomy:rootOf </ids/RVLM-IML1-d> ;
+    apinatomy:sourceOf </ids/RVLM-IML1-d_lnk_1> .
+
+</ids/s265> apinatomy:rootOf </ids/P4-DIAPHRGM-d> ;
+    apinatomy:sourceOf </ids/P4-DIAPHRGM-d_lnk_1> .
+
+</ids/s266> apinatomy:rootOf </ids/P5-DIAPHRGM-d> ;
+    apinatomy:sourceOf </ids/P5-DIAPHRGM-d_lnk_1> .
+
+</ids/soma107in214> apinatomy:conveys </ids/new-255> .
+
+</ids/soma202> apinatomy:conveys </ids/new-253> .
+
+</ids/soma220_1> apinatomy:conveys </ids/new-265> .
+
+</ids/soma220_10> apinatomy:conveys </ids/new-274> .
+
+</ids/soma220_11> apinatomy:conveys </ids/new-275> .
+
+</ids/soma220_12> apinatomy:conveys </ids/new-276> .
+
+</ids/soma220_13> apinatomy:conveys </ids/new-277> .
+
+</ids/soma220_14> apinatomy:conveys </ids/new-278> .
+
+</ids/soma220_15> apinatomy:conveys </ids/new-279> .
+
+</ids/soma220_16> apinatomy:conveys </ids/new-280> .
+
+</ids/soma220_17> apinatomy:conveys </ids/new-281> .
+
+</ids/soma220_2> apinatomy:conveys </ids/new-266> .
+
+</ids/soma220_3> apinatomy:conveys </ids/new-267> .
+
+</ids/soma220_4> apinatomy:conveys </ids/new-268> .
+
+</ids/soma220_5> apinatomy:conveys </ids/new-269> .
+
+</ids/soma220_6> apinatomy:conveys </ids/new-270> .
+
+</ids/soma220_7> apinatomy:conveys </ids/new-271> .
+
+</ids/soma220_8> apinatomy:conveys </ids/new-272> .
+
+</ids/soma220_9> apinatomy:conveys </ids/new-273> .
+
+</ids/soma228> apinatomy:conveys </ids/new-254> .
+
+</ids/soma248_1> apinatomy:conveys </ids/new-263> .
+
+</ids/soma248_2> apinatomy:conveys </ids/new-264> .
+
+</ids/soma249_1> apinatomy:conveys </ids/new-260> .
+
+</ids/soma249_2> apinatomy:conveys </ids/new-261> .
+
+</ids/soma249_3> apinatomy:conveys </ids/new-262> .
+
+</ids/soma262> apinatomy:conveys </ids/new-258> .
+
+</ids/soma264> apinatomy:conveys </ids/new-259> .
+
+</ids/soma265> apinatomy:conveys </ids/new-256> .
+
+</ids/soma266> apinatomy:conveys </ids/new-257> .
+
+</ids/t107in214> apinatomy:rootOf </ids/T1-INTERCOSTAL-a> ;
+    apinatomy:sourceOf </ids/T1-INTERCOSTAL-a_lnk_1> .
+
+</ids/t202> apinatomy:rootOf </ids/PVN-IML1-a> ;
+    apinatomy:sourceOf </ids/PVN-IML1-a_lnk_1> .
+
+</ids/t220_1> apinatomy:rootOf </ids/SCG-AB-a> ;
+    apinatomy:sourceOf </ids/SCG-AB-a_lnk_1> .
+
+</ids/t220_10> apinatomy:rootOf </ids/SCG-ECN-TONG-a> ;
+    apinatomy:sourceOf </ids/SCG-ECN-TONG-a_lnk_1> .
+
+</ids/t220_11> apinatomy:rootOf </ids/SCG-ICN-TONG-a> ;
+    apinatomy:sourceOf </ids/SCG-ICN-TONG-a_lnk_1> .
+
+</ids/t220_12> apinatomy:rootOf </ids/SCG-TRCHA-a> ;
+    apinatomy:sourceOf </ids/SCG-TRCHA-a_lnk_1> .
+
+</ids/t220_13> apinatomy:rootOf </ids/SCG-ICN-TRCHA-a> ;
+    apinatomy:sourceOf </ids/SCG-ICN-TRCHA-a_lnk_1> .
+
+</ids/t220_14> apinatomy:rootOf </ids/SCG-PVN-a> ;
+    apinatomy:sourceOf </ids/SCG-PVN-a_lnk_1> .
+
+</ids/t220_15> apinatomy:rootOf </ids/SCG-RTRPZ-a> ;
+    apinatomy:sourceOf </ids/SCG-RTRPZ-a_lnk_1> .
+
+</ids/t220_16> apinatomy:rootOf </ids/SCG-RVLM-a> ;
+    apinatomy:sourceOf </ids/SCG-RVLM-a_lnk_1> .
+
+</ids/t220_17> apinatomy:rootOf </ids/SCG-NTS-a> ;
+    apinatomy:sourceOf </ids/SCG-NTS-a_lnk_1> .
+
+</ids/t220_2> apinatomy:rootOf </ids/SCG-CB-a> ;
+    apinatomy:sourceOf </ids/SCG-CB-a_lnk_1> .
+
+</ids/t220_3> apinatomy:rootOf </ids/SCG-CS-a> ;
+    apinatomy:sourceOf </ids/SCG-CS-a_lnk_1> .
+
+</ids/t220_4> apinatomy:rootOf </ids/SCG-eSLN-LRYNX-a> ;
+    apinatomy:sourceOf </ids/SCG-eSLN-LRYNX-a_lnk_1> .
+
+</ids/t220_5> apinatomy:rootOf </ids/SCG-iSLN-LRYNX-a> ;
+    apinatomy:sourceOf </ids/SCG-iSLN-LRYNX-a_lnk_1> .
+
+</ids/t220_6> apinatomy:rootOf </ids/SCG-eSLN-EM-a> ;
+    apinatomy:sourceOf </ids/SCG-eSLN-EM-a_lnk_1> .
+
+</ids/t220_7> apinatomy:rootOf </ids/SCG-iSLN-EM-a> ;
+    apinatomy:sourceOf </ids/SCG-iSLN-EM-a_lnk_1> .
+
+</ids/t220_8> apinatomy:rootOf </ids/SCG-eILN-EM-a> ;
+    apinatomy:sourceOf </ids/SCG-eILN-EM-a_lnk_1> .
+
+</ids/t220_9> apinatomy:rootOf </ids/SCG-iILN-EM-a> ;
+    apinatomy:sourceOf </ids/SCG-iILN-EM-a_lnk_1> .
+
+</ids/t228> apinatomy:rootOf </ids/IML1-SCG-a> ;
+    apinatomy:sourceOf </ids/IML1-SCG-a_lnk_1> .
+
+</ids/t248_1> apinatomy:rootOf </ids/CB-NTS-a> ;
+    apinatomy:sourceOf </ids/CB-NTS-a_lnk_1> .
+
+</ids/t248_2> apinatomy:rootOf </ids/CS-NTS-a> ;
+    apinatomy:sourceOf </ids/CS-NTS-a_lnk_1> .
+
+</ids/t249_1> apinatomy:rootOf </ids/AB-NTS-a> ;
+    apinatomy:sourceOf </ids/AB-NTS-a_lnk_1> .
+
+</ids/t249_2> apinatomy:rootOf </ids/LM-NTS-a> ;
+    apinatomy:sourceOf </ids/LM-NTS-a_lnk_1> .
+
+</ids/t249_3> apinatomy:rootOf </ids/EM-NTS-a> ;
+    apinatomy:sourceOf </ids/EM-NTS-a_lnk_1> .
+
+</ids/t262> apinatomy:rootOf </ids/NTS-IML1-a> ;
+    apinatomy:sourceOf </ids/NTS-IML1-a_lnk_1> .
+
+</ids/t264> apinatomy:rootOf </ids/RVLM-IML1-a> ;
+    apinatomy:sourceOf </ids/RVLM-IML1-a_lnk_1> .
+
+</ids/t265> apinatomy:rootOf </ids/P4-DIAPHRGM-a> ;
+    apinatomy:sourceOf </ids/P4-DIAPHRGM-a_lnk_1> .
+
+</ids/t266> apinatomy:rootOf </ids/P5-DIAPHRGM-a> ;
+    apinatomy:sourceOf </ids/P5-DIAPHRGM-a_lnk_1> .
+
+</ids/107in200> apinatomy:external ILX:0738307 ;
+    apinatomy:layerIn </ids/200> ;
+    apinatomy:supertype </ids/mat_107> .
+
+</ids/109in222> apinatomy:external ILX:0738327 ;
+    apinatomy:layerIn </ids/222> ;
+    apinatomy:supertype </ids/mat_109> .
+
+</ids/110in223> apinatomy:external ILX:0738304 ;
+    apinatomy:layerIn </ids/223> ;
+    apinatomy:supertype </ids/mat_110> .
+
+</ids/110in224> apinatomy:external FMA:66284 ;
+    apinatomy:layerIn </ids/224> ;
+    apinatomy:supertype </ids/mat_110> .
+
+</ids/110in225> apinatomy:external ILX:0738305 ;
+    apinatomy:layerIn </ids/225> ;
+    apinatomy:supertype </ids/mat_110> .
+
+</ids/112in227> apinatomy:external UBERON:0005020,
+        ILX:0731712 ;
+    apinatomy:layerIn </ids/227> ;
+    apinatomy:supertype </ids/mat_112> .
+
+</ids/201> apinatomy:external UBERON:0001898,
+        ILX:0105177 .
+
+</ids/244> apinatomy:external FMA:6240 .
+
+</ids/245> apinatomy:external UBERON:0003716 .
+
+</ids/254> apinatomy:external ILX:0738316 .
+
+</ids/255> apinatomy:external UBERON:0001629,
+        ILX:0736966 .
+
+</ids/256> apinatomy:external UBERON:0003708,
+        ILX:0731873 .
+
+</ids/261> apinatomy:external UBERON:0001103 .
+
+</ids/265> apinatomy:external ILX:0738324 .
+
+</ids/266> apinatomy:external ILX:0738325 .
+
+</ids/ref_mat_117_218> apinatomy:layerIn </ids/218> ;
+    apinatomy:supertype </ids/mat_117> .
+
+</ids/ref_mat_117_219> apinatomy:layerIn </ids/219> ;
+    apinatomy:supertype </ids/mat_117> .
+
+</ids/ref_mat_117_230> apinatomy:layerIn </ids/230> ;
+    apinatomy:supertype </ids/mat_117> .
+
+</ids/ref_mat_117_233> apinatomy:layerIn </ids/233> ;
+    apinatomy:supertype </ids/mat_117> .
+
+</ids/ref_mat_117_234> apinatomy:layerIn </ids/234> ;
+    apinatomy:supertype </ids/mat_117> .
+
+</ids/ref_mat_117_236> apinatomy:layerIn </ids/236> ;
+    apinatomy:supertype </ids/mat_117> .
+
+</ids/ref_mat_117_238> apinatomy:layerIn </ids/238> ;
+    apinatomy:supertype </ids/mat_117> .
+
+</ids/ref_mat_117_243> apinatomy:layerIn </ids/243> ;
+    apinatomy:supertype </ids/mat_117> .
+
+</ids/108in221> apinatomy:external ILX:0738326 ;
+    apinatomy:layerIn </ids/221> ;
+    apinatomy:supertype </ids/mat_108> .
+
+</ids/202> apinatomy:external UBERON:0001920 .
+
+</ids/264> apinatomy:external ILX:0730074 .
+
+</ids/mat_110> apinatomy:external UBERON:0000415 .
+
+</ids/ref_mat_107_206> apinatomy:layerIn </ids/206> ;
+    apinatomy:supertype </ids/mat_107> .
+
+</ids/ref_mat_107_207> apinatomy:layerIn </ids/207> ;
+    apinatomy:supertype </ids/mat_107> .
+
+</ids/ref_mat_107_208> apinatomy:layerIn </ids/208> ;
+    apinatomy:supertype </ids/mat_107> .
+
+</ids/ref_mat_107_211> apinatomy:layerIn </ids/211> ;
+    apinatomy:supertype </ids/mat_107> .
+
+</ids/ref_mat_107_212> apinatomy:layerIn </ids/212> ;
+    apinatomy:supertype </ids/mat_107> .
+
+</ids/ref_mat_107_213> apinatomy:layerIn </ids/213> ;
+    apinatomy:supertype </ids/mat_107> .
+
+</ids/107in209> apinatomy:external ILX:0738321 ;
+    apinatomy:layerIn </ids/209> ;
+    apinatomy:supertype </ids/mat_107> .
+
+</ids/107in210> apinatomy:external ILX:0738322 ;
+    apinatomy:layerIn </ids/210> ;
+    apinatomy:supertype </ids/mat_107> .
+
+</ids/248> apinatomy:external ILX:0738310 .
+
+</ids/ref_mat_117_240> apinatomy:layerIn </ids/240> ;
+    apinatomy:supertype </ids/mat_117> .
+
+</ids/114in226> apinatomy:external UBERON:0004982,
+        ILX:0736652 ;
+    apinatomy:layerIn </ids/226> ;
+    apinatomy:supertype </ids/mat_114> .
+
+</ids/228> apinatomy:external FMA:68868 .
+
+</ids/ref_mat_117_242> apinatomy:layerIn </ids/242> ;
+    apinatomy:supertype </ids/mat_117> .
+
+</ids/107in214> apinatomy:external ILX:0738306 ;
+    apinatomy:layerIn </ids/214> ;
+    apinatomy:supertype </ids/mat_107> .
+
+</ids/249> apinatomy:external ILX:0738311 .
+
+</ids/ref_mat_117_237> apinatomy:layerIn </ids/237> ;
+    apinatomy:supertype </ids/mat_117> .
+
+</ids/262> apinatomy:external ILX:0738323 .
+
+</ids/ref_mat_117_235> apinatomy:layerIn </ids/235> ;
+    apinatomy:supertype </ids/mat_117> .
+
+</ids/107in205> apinatomy:external ILX:0738320 ;
+    apinatomy:layerIn </ids/205> ;
+    apinatomy:supertype </ids/mat_107> .
+
+</ids/ref_mat_117_239> apinatomy:layerIn </ids/239> ;
+    apinatomy:supertype </ids/mat_117> .
+
+</ids/mat_107> apinatomy:external UBERON:0001017 .
+
+</ids/mat_117> apinatomy:external UBERON:0000010 .
+
+</ids/ref_mat_117_220> apinatomy:layerIn </ids/220> ;
+    apinatomy:supertype </ids/mat_117> .
+
