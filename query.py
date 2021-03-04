@@ -11,8 +11,25 @@ API_KEY = 'xBOrIfnZTvJQtobGo8XHRvThdMYGTxtf'
 
 #===============================================================================
 
-SOMAS_QUERY = """MATCH p1 = (c:Class{iri: "http://uri.neuinfo.org/nif/nifstd/nlx_154731"})
-      RETURN p1"""
+MATCH_ALL = 'MATCH (n) RETURN n'
+
+
+SPECIES_QUERY = """MATCH (n)
+      WHERE n.iri IN [
+              "http://purl.obolibrary.org/obo/NCBITaxon_9378",   // Suncus murinus
+              "http://purl.obolibrary.org/obo/NCBITaxon_9606",   // Homo sapiens
+              "http://purl.obolibrary.org/obo/NCBITaxon_9685",   // Felis catus
+              "http://purl.obolibrary.org/obo/NCBITaxon_9823",   // Sus scrofa
+              "http://purl.obolibrary.org/obo/NCBITaxon_10090",  // Mus musculus
+              "http://purl.obolibrary.org/obo/NCBITaxon_10116"   // Rattus norvegicus
+              ]
+      RETURN n"""
+
+
+SOMAS_QUERY = """MATCH (c:Class{iri: "http://uri.neuinfo.org/nif/nifstd/nlx_154731"})
+      -[:apinatomy:annotates]->(soma:NamedIndividual)
+      RETURN soma"""
+
 
 SOMA_PROCESSES_QUERY = """MATCH path1 = (c:Class{iri: "http://uri.neuinfo.org/nif/nifstd/nlx_154731"})
       -[:apinatomy:annotates]->(soma:NamedIndividual)    // soma lyph
@@ -33,17 +50,6 @@ SOMA_PROCESSES_QUERY = """MATCH path1 = (c:Class{iri: "http://uri.neuinfo.org/ni
       -[:apinatomy:rootOf]->(chain)
       RETURN path1, path2, path3"""
 
-
-SPECIES_QUERY = """MATCH (n)
-      WHERE n.iri IN [
-              "http://purl.obolibrary.org/obo/NCBITaxon_9378",   // Suncus murinus
-              "http://purl.obolibrary.org/obo/NCBITaxon_9606",   // Homo sapiens
-              "http://purl.obolibrary.org/obo/NCBITaxon_9685",   // Felis catus
-              "http://purl.obolibrary.org/obo/NCBITaxon_9823",   // Sus scrofa
-              "http://purl.obolibrary.org/obo/NCBITaxon_10090",  // Mus musculus
-              "http://purl.obolibrary.org/obo/NCBITaxon_10116"   // Rattus norvegicus
-              ]
-      RETURN n"""
 
 TEST_QUERY_1 = """MATCH path1 = (c:Class{iri: "http://uri.neuinfo.org/nif/nifstd/nlx_154731"})
       -[:apinatomy:annotates]->(soma:NamedIndividual)    // soma lyph
@@ -79,7 +85,6 @@ TEST_QUERY_2 = """MATCH path1 = (c:Class{iri: "http://uri.neuinfo.org/nif/nifstd
       WITH path1, path2, nodeRoot
       RETURN path1, path2"""
 
-MATCH_ALL = 'MATCH (n) RETURN n'
 
 #===============================================================================
 
@@ -91,7 +96,7 @@ def query(cypher, limit=10):
         },
         params={
             'api_key': API_KEY,
-            'cypherQuery': query,
+            'cypherQuery': cypher,
             'limit': limit
         })
     #print(response.headers)
@@ -100,8 +105,7 @@ def query(cypher, limit=10):
 
 #===============================================================================
 
-print(query(MATCH_ALL, 1))
 #print(query(SPECIES_QUERY))
-#print(query(SOMAS_QUERY))
+print(query(SOMAS_QUERY))
 
 #===============================================================================
