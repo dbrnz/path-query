@@ -125,7 +125,4 @@ if __name__ == '__main__':
          else '{}_{}.ttl'.format(args.model, '_'.join(args.neurons)), 'w') as o:
         o.write(rdf.serialize(format='turtle', base=rdflib.URIRef(model_uri)).decode('utf-8'))
 
-        # Don't set `base=map_uri` until RDFLib 5.0 and then use `explicit_base=True`
-        # See https://github.com/RDFLib/rdflib/issues/559
-
 #===============================================================================
