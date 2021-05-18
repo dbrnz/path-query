@@ -6,9 +6,12 @@
 @prefix UBERON: <http://purl.obolibrary.org/obo/UBERON_> .
 @prefix apinatomy: <https://apinatomy.org/uris/readable/> .
 
-NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
+NLX:154731 apinatomy:annotates </ids/sn-drg-l6_10>,
+        </ids/sn-drg-l6_12>,
+        </ids/sn-drg-s1_10>,
+        </ids/sn-drg-s1_12>,
+        </ids/sn-drgl1_11>,
         </ids/sn-img_3>,
-        </ids/sn-pg_1>,
         </ids/sn-pg_2>,
         </ids/sn-sgl1>,
         </ids/sn-sgl2>,
@@ -95,6 +98,8 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 
 </ids/K6> apinatomy:external UBERON:0006492 .
 
+</ids/K62> apinatomy:external UBERON:0002860 .
+
 </ids/K67> apinatomy:external EMAPA:25277 .
 
 </ids/K69> apinatomy:external EMAPA:25281 .
@@ -118,7 +123,7 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 </ids/ac-4-K100_lnk_1> apinatomy:fasciculatesIn </ids/n-blad> ;
     apinatomy:next </ids/ac-4-K100_lnk_2> .
 
-</ids/ac-4-K100_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_KM_1_K100> ;
+</ids/ac-4-K100_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_KM_11_K100> ;
     apinatomy:next </ids/ac-4-K100_lnk_3> .
 
 </ids/ac-4-K100_lnk_3> apinatomy:fasciculatesIn </ids/K105> .
@@ -329,7 +334,7 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 </ids/ac-4-K99_lnk_1> apinatomy:fasciculatesIn </ids/n-blad> ;
     apinatomy:next </ids/ac-4-K99_lnk_2> .
 
-</ids/ac-4-K99_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_KM_1_K99> ;
+</ids/ac-4-K99_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_KM_11_K99> ;
     apinatomy:next </ids/ac-4-K99_lnk_3> .
 
 </ids/ac-4-K99_lnk_3> apinatomy:fasciculatesIn </ids/K106> .
@@ -362,10 +367,10 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 </ids/ac-bn1_2_lnk_1> apinatomy:fasciculatesIn </ids/n-blad> ;
     apinatomy:next </ids/ac-bn1_2_lnk_2> .
 
-</ids/ac-bn1_2_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_KM_1_K100> ;
+</ids/ac-bn1_2_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_KM_10_K100> ;
     apinatomy:next </ids/ac-bn1_2_lnk_3> .
 
-</ids/ac-bn1_2_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_KM_87_K100> .
+</ids/ac-bn1_2_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_KM_10_K100> .
 
 </ids/ac-l1l26a_lnk_2> apinatomy:fasciculatesIn </ids/n-hypo> ;
     apinatomy:next </ids/ac-l1l26a_lnk_3> .
@@ -445,7 +450,34 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
     apinatomy:nextChainStartLevels </ids/ac-bn1_2_lnk_1>,
         </ids/ac_bd1_2_lnk_1> .
 
-</ids/ac-sn-drgl1_11_lnk_1> apinatomy:fasciculatesIn </ids/K56> .
+</ids/ac-sn-drgl1-11_11_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_KM_27_K_129_K22_14> ;
+    apinatomy:next </ids/ac-sn-drgl1-11_11_lnk_2> .
+
+</ids/ac-sn-drgl1-11_11_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_K_78_K_129_K22_12> .
+
+</ids/ac-sn-drgl1-2_11_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_KM_27_K_129_K22_14> ;
+    apinatomy:next </ids/ac-sn-drgl1-2_11_lnk_2> .
+
+</ids/ac-sn-drgl1-2_11_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_K_86_K_129_K22_3> .
+
+</ids/ac-sn-drgl1-6_11_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_KM_27_K_129_K22_14> ;
+    apinatomy:next </ids/ac-sn-drgl1-6_11_lnk_2> .
+
+</ids/ac-sn-drgl1-6_11_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_K_83_K_129_K22_7> .
+
+</ids/ac-sn-drgl1-8_11_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_KM_27_K_129_K22_14> ;
+    apinatomy:next </ids/ac-sn-drgl1-8_11_lnk_2> .
+
+</ids/ac-sn-drgl1-8_11_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_K_81_K_129_K22_9> .
+
+</ids/ac-sn-drgl1_11_lnk_1> apinatomy:fasciculatesIn </ids/K56> ;
+    apinatomy:next </ids/ac-sn-drgl1_11_lnk_2> .
+
+</ids/ac-sn-drgl1_11_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_KM_27_K_129_K22_14> ;
+    apinatomy:nextChainStartLevels </ids/ac-sn-drgl1-11_11_lnk_1>,
+        </ids/ac-sn-drgl1-2_11_lnk_1>,
+        </ids/ac-sn-drgl1-6_11_lnk_1>,
+        </ids/ac-sn-drgl1-8_11_lnk_1> .
 
 </ids/ac-snl16_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_K_83_K_129_K22_7> ;
     apinatomy:next </ids/ac-snl16_lnk_2> .
@@ -613,10 +645,10 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 </ids/ac_bd1_2_lnk_1> apinatomy:fasciculatesIn </ids/n-blad> ;
     apinatomy:next </ids/ac_bd1_2_lnk_2> .
 
-</ids/ac_bd1_2_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_KM_1_K99> ;
+</ids/ac_bd1_2_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_KM_10_K99> ;
     apinatomy:next </ids/ac_bd1_2_lnk_3> .
 
-</ids/ac_bd1_2_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_KM_87_K99> .
+</ids/ac_bd1_2_lnk_3> apinatomy:fasciculatesIn </ids/ref_mat_KM_10_K99> .
 
 </ids/acn1_lnk_1> apinatomy:fasciculatesIn </ids/K36> ;
     apinatomy:next </ids/acn1_lnk_2> .
@@ -856,6 +888,17 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 
 </ids/dc-sns15_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_K_83_K_129_K28_7> .
 
+</ids/dc_drg-l6_10_lnk_1> apinatomy:fasciculatesIn </ids/K61> .
+
+</ids/dc_drg-l6_12_lnk_1> apinatomy:fasciculatesIn </ids/K61> .
+
+</ids/dc_drg-s1_10_lnk_1> apinatomy:fasciculatesIn </ids/ref_mat_KM_27_K_129_K27_14> ;
+    apinatomy:next </ids/dc_drg-s1_10_lnk_2> .
+
+</ids/dc_drg-s1_10_lnk_2> apinatomy:fasciculatesIn </ids/ref_mat_K_86_K_129_K27_3> .
+
+</ids/dc_drg-s1_12_lnk_1> apinatomy:fasciculatesIn </ids/K62> .
+
 </ids/dcn1_lnk_1> apinatomy:fasciculatesIn </ids/K36> .
 
 </ids/dcn2_lnk_1> apinatomy:fasciculatesIn </ids/K43> .
@@ -874,15 +917,19 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 
 </ids/dn-img_3_lnk_1> apinatomy:fasciculatesIn </ids/K102> .
 
-</ids/dn-pg_1_lnk_1> apinatomy:fasciculatesIn </ids/K104> .
-
 </ids/dn-pg_2_lnk_1> apinatomy:fasciculatesIn </ids/K104> .
 
-</ids/lnk-sn-drgl1_11> apinatomy:source </ids/ns120> .
+</ids/lnk-sn-drg-l6_10> apinatomy:source </ids/ns160> .
+
+</ids/lnk-sn-drg-l6_12> apinatomy:source </ids/ns200> .
+
+</ids/lnk-sn-drg-s1_10> apinatomy:source </ids/ns170> .
+
+</ids/lnk-sn-drg-s1_12> apinatomy:source </ids/ns209> .
+
+</ids/lnk-sn-drgl1_11> apinatomy:target </ids/ns121> .
 
 </ids/lnk-sn-img_3> apinatomy:source </ids/ns300> .
-
-</ids/lnk-sn-pg_1> apinatomy:target </ids/ns261> .
 
 </ids/lnk-sn-pg_2> apinatomy:source </ids/ns250> ;
     apinatomy:target </ids/ns251> .
@@ -970,9 +1017,15 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 </ids/mat_KM_88> apinatomy:external EMAPA:32269,
         EMAPA:36117 .
 
+</ids/mat_K_78> apinatomy:external UBERON:0002181 .
+
+</ids/mat_K_81> apinatomy:external UBERON:0016576 .
+
 </ids/mat_K_83> apinatomy:external UBERON:0016578 .
 
 </ids/mat_K_85> apinatomy:external UBERON:0016580 .
+
+</ids/mat_K_86> apinatomy:external UBERON:0004677 .
 
 </ids/n-hypo> apinatomy:external UBERON:0005303 .
 
@@ -988,7 +1041,7 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 </ids/ns12> apinatomy:rootOf </ids/acn6> ;
     apinatomy:sourceOf </ids/acn6_lnk_1> .
 
-</ids/ns120> apinatomy:rootOf </ids/ac-sn-drgl1_11> ;
+</ids/ns121> apinatomy:rootOf </ids/ac-sn-drgl1_11> ;
     apinatomy:sourceOf </ids/ac-sn-drgl1_11_lnk_1> .
 
 </ids/ns13> apinatomy:rootOf </ids/dcn7> ;
@@ -1003,6 +1056,12 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 </ids/ns15_5> apinatomy:rootOf </ids/acn8> ;
     apinatomy:sourceOf </ids/acn8_lnk_1> .
 
+</ids/ns160> apinatomy:rootOf </ids/dc_drg-l6_10> ;
+    apinatomy:sourceOf </ids/dc_drg-l6_10_lnk_1> .
+
+</ids/ns170> apinatomy:rootOf </ids/dc_drg-s1_10> ;
+    apinatomy:sourceOf </ids/dc_drg-s1_10_lnk_1> .
+
 </ids/ns19> apinatomy:rootOf </ids/dc-snl16> ;
     apinatomy:sourceOf </ids/dc-snl16_lnk_1> .
 
@@ -1011,6 +1070,12 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 
 </ids/ns20> apinatomy:rootOf </ids/ac-snl16> ;
     apinatomy:sourceOf </ids/ac-snl16_lnk_1> .
+
+</ids/ns200> apinatomy:rootOf </ids/dc_drg-l6_12> ;
+    apinatomy:sourceOf </ids/dc_drg-l6_12_lnk_1> .
+
+</ids/ns209> apinatomy:rootOf </ids/dc_drg-s1_12> ;
+    apinatomy:sourceOf </ids/dc_drg-s1_12_lnk_1> .
 
 </ids/ns21> apinatomy:rootOf </ids/dc-snl26> ;
     apinatomy:sourceOf </ids/dc-snl26_lnk_1> .
@@ -1032,9 +1097,6 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 
 </ids/ns26> apinatomy:rootOf </ids/dc-snl28> ;
     apinatomy:sourceOf </ids/dc-snl28_lnk_1> .
-
-</ids/ns261> apinatomy:rootOf </ids/dn-pg_1> ;
-    apinatomy:sourceOf </ids/dn-pg_1_lnk_1> .
 
 </ids/ns27> apinatomy:rootOf </ids/ac-snl28> ;
     apinatomy:sourceOf </ids/ac-snl28_lnk_1> .
@@ -1098,6 +1160,12 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 
 </ids/ns9> apinatomy:rootOf </ids/dcn5> ;
     apinatomy:sourceOf </ids/dcn5_lnk_1> .
+
+</ids/ref_mat_KM_11_K100> apinatomy:layerIn </ids/K100> ;
+    apinatomy:supertype </ids/mat_KM_11> .
+
+</ids/ref_mat_KM_11_K99> apinatomy:layerIn </ids/K99> ;
+    apinatomy:supertype </ids/mat_KM_11> .
 
 </ids/ref_mat_KM_25_K52> apinatomy:layerIn </ids/K52> ;
     apinatomy:supertype </ids/mat_KM_25> .
@@ -1174,14 +1242,24 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 </ids/ref_mat_KM_27_K_129_K9_14> apinatomy:cloneOf </ids/ref_mat_KM_27_K_129> ;
     apinatomy:layerIn </ids/K9> .
 
-</ids/ref_mat_KM_87_K100> apinatomy:layerIn </ids/K100> ;
-    apinatomy:supertype </ids/mat_KM_87> .
-
-</ids/ref_mat_KM_87_K99> apinatomy:layerIn </ids/K99> ;
-    apinatomy:supertype </ids/mat_KM_87> .
-
 </ids/ref_mat_KM_88_K101> apinatomy:layerIn </ids/K101> ;
     apinatomy:supertype </ids/mat_KM_88> .
+
+</ids/ref_mat_K_78_K_129> apinatomy:supertype </ids/mat_K_78> .
+
+</ids/ref_mat_K_78_K_129_K22_12> apinatomy:cloneOf </ids/ref_mat_K_78_K_129> ;
+    apinatomy:layerIn </ids/K22> .
+
+</ids/ref_mat_K_81_K_129> apinatomy:supertype </ids/mat_K_81> .
+
+</ids/ref_mat_K_81_K_129_K22_9> apinatomy:cloneOf </ids/ref_mat_K_81_K_129> ;
+    apinatomy:layerIn </ids/K22> .
+
+</ids/ref_mat_K_86_K_129_K22_3> apinatomy:cloneOf </ids/ref_mat_K_86_K_129> ;
+    apinatomy:layerIn </ids/K22> .
+
+</ids/ref_mat_K_86_K_129_K27_3> apinatomy:cloneOf </ids/ref_mat_K_86_K_129> ;
+    apinatomy:layerIn </ids/K27> .
 
 </ids/root-ac-4-K78> apinatomy:rootOf </ids/ac-4-K78> ;
     apinatomy:sourceOf </ids/ac-4-K78_lnk_1> .
@@ -1231,11 +1309,17 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 </ids/root-dc-4-K85> apinatomy:rootOf </ids/dc-4-K85> ;
     apinatomy:sourceOf </ids/dc-4-K85_lnk_1> .
 
+</ids/sn-drg-l6_10> apinatomy:conveys </ids/lnk-sn-drg-l6_10> .
+
+</ids/sn-drg-l6_12> apinatomy:conveys </ids/lnk-sn-drg-l6_12> .
+
+</ids/sn-drg-s1_10> apinatomy:conveys </ids/lnk-sn-drg-s1_10> .
+
+</ids/sn-drg-s1_12> apinatomy:conveys </ids/lnk-sn-drg-s1_12> .
+
 </ids/sn-drgl1_11> apinatomy:conveys </ids/lnk-sn-drgl1_11> .
 
 </ids/sn-img_3> apinatomy:conveys </ids/lnk-sn-img_3> .
-
-</ids/sn-pg_1> apinatomy:conveys </ids/lnk-sn-pg_1> .
 
 </ids/sn-pg_2> apinatomy:conveys </ids/lnk-sn-pg_2> .
 
@@ -1293,8 +1377,6 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 
 </ids/K100> apinatomy:external UBERON:0001258 .
 
-</ids/K22> apinatomy:external UBERON:0006448 .
-
 </ids/K23> apinatomy:external UBERON:0006450 .
 
 </ids/K26> apinatomy:external UBERON:0006447 .
@@ -1314,6 +1396,8 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 </ids/K42> apinatomy:external UBERON:0002430 .
 
 </ids/K43> apinatomy:external UBERON:0002625 .
+
+</ids/K61> apinatomy:external EMAPA:25169 .
 
 </ids/K68> apinatomy:external EMAPA:25279 .
 
@@ -1338,15 +1422,15 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 </ids/ac-snl5l6_lnk_1> apinatomy:fasciculatesIn </ids/n-pud> ;
     apinatomy:next </ids/ac-snl5l6_lnk_2> .
 
-</ids/mat_KM_1> apinatomy:external UBERON:0000178 .
+</ids/mat_KM_10> apinatomy:external UBERON:0001135 .
 
-</ids/mat_KM_87> apinatomy:external UBERON:0000483 .
+</ids/mat_KM_11> apinatomy:external UBERON:0002384 .
 
-</ids/ref_mat_KM_1_K100> apinatomy:layerIn </ids/K100> ;
-    apinatomy:supertype </ids/mat_KM_1> .
+</ids/ref_mat_KM_10_K100> apinatomy:layerIn </ids/K100> ;
+    apinatomy:supertype </ids/mat_KM_10> .
 
-</ids/ref_mat_KM_1_K99> apinatomy:layerIn </ids/K99> ;
-    apinatomy:supertype </ids/mat_KM_1> .
+</ids/ref_mat_KM_10_K99> apinatomy:layerIn </ids/K99> ;
+    apinatomy:supertype </ids/mat_KM_10> .
 
 </ids/ref_mat_KM_25_K53> apinatomy:layerIn </ids/K53> ;
     apinatomy:supertype </ids/mat_KM_25> .
@@ -1359,9 +1443,9 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 </ids/ref_mat_K_85_K_129_K27_5> apinatomy:cloneOf </ids/ref_mat_K_85_K_129> ;
     apinatomy:layerIn </ids/K27> .
 
-</ids/K102> apinatomy:external UBERON:0005453 .
+</ids/ref_mat_K_86_K_129> apinatomy:supertype </ids/mat_K_86> .
 
-</ids/K27> apinatomy:external EMAPA:19574 .
+</ids/K102> apinatomy:external UBERON:0005453 .
 
 </ids/K63> apinatomy:external EMAPA:25269 .
 
@@ -1375,21 +1459,19 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 
 </ids/n-pud> apinatomy:external UBERON:0011390 .
 
-</ids/ref_mat_KM_27_K_129_K27_14> apinatomy:cloneOf </ids/ref_mat_KM_27_K_129> ;
-    apinatomy:layerIn </ids/K27> .
-
 </ids/ref_mat_K_83_K_129_K27_7> apinatomy:cloneOf </ids/ref_mat_K_83_K_129> ;
     apinatomy:layerIn </ids/K27> .
 
 </ids/ref_mat_K_83_K_129_K28_7> apinatomy:cloneOf </ids/ref_mat_K_83_K_129> ;
     apinatomy:layerIn </ids/K28> .
 
+</ids/K104> apinatomy:external UBERON:0016508 .
+
+</ids/K27> apinatomy:external EMAPA:19574 .
+
 </ids/K72> apinatomy:external ILX:0777088 .
 
 </ids/n-lumspl> apinatomy:external UBERON:0018683 .
-
-</ids/ref_mat_KM_27_K_129_K22_14> apinatomy:cloneOf </ids/ref_mat_KM_27_K_129> ;
-    apinatomy:layerIn </ids/K22> .
 
 </ids/ref_mat_KM_27_K_129_K23_14> apinatomy:cloneOf </ids/ref_mat_KM_27_K_129> ;
     apinatomy:layerIn </ids/K23> .
@@ -1397,9 +1479,12 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 </ids/ref_mat_KM_27_K_129_K26_14> apinatomy:cloneOf </ids/ref_mat_KM_27_K_129> ;
     apinatomy:layerIn </ids/K26> .
 
+</ids/ref_mat_KM_27_K_129_K27_14> apinatomy:cloneOf </ids/ref_mat_KM_27_K_129> ;
+    apinatomy:layerIn </ids/K27> .
+
 </ids/ref_mat_K_83_K_129> apinatomy:supertype </ids/mat_K_83> .
 
-</ids/K104> apinatomy:external UBERON:0016508 .
+</ids/K22> apinatomy:external UBERON:0006448 .
 
 </ids/mat_KM_25> apinatomy:external UBERON:0001017 .
 
@@ -1412,9 +1497,6 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 </ids/ref_mat_KM_25_K39> apinatomy:layerIn </ids/K39> ;
     apinatomy:supertype </ids/mat_KM_25> .
 
-</ids/ref_mat_K_83_K_129_K22_7> apinatomy:cloneOf </ids/ref_mat_K_83_K_129> ;
-    apinatomy:layerIn </ids/K22> .
-
 </ids/ref_mat_K_83_K_129_K23_7> apinatomy:cloneOf </ids/ref_mat_K_83_K_129> ;
     apinatomy:layerIn </ids/K23> .
 
@@ -1422,6 +1504,9 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 
 </ids/ref_mat_KM_25_K35> apinatomy:layerIn </ids/K35> ;
     apinatomy:supertype </ids/mat_KM_25> .
+
+</ids/ref_mat_K_83_K_129_K22_7> apinatomy:cloneOf </ids/ref_mat_K_83_K_129> ;
+    apinatomy:layerIn </ids/K22> .
 
 </ids/K75> apinatomy:external ILX:0777091 .
 
@@ -1441,6 +1526,9 @@ NLX:154731 apinatomy:annotates </ids/sn-drgl1_11>,
 </ids/K45> apinatomy:external UBERON:0007632 .
 
 </ids/K83> apinatomy:external FMA:6543 .
+
+</ids/ref_mat_KM_27_K_129_K22_14> apinatomy:cloneOf </ids/ref_mat_KM_27_K_129> ;
+    apinatomy:layerIn </ids/K22> .
 
 </ids/K76> apinatomy:external ILX:0777092 .
 
