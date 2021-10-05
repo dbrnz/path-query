@@ -10,3 +10,6 @@ requests = "*"
 pyvis = "*"
 networkx = "*"
 rdflib = "*"
+pyxattr = {path = "/Users/dave/build/pyxattr/"}
+nifstd-tools = {path = "/Users/dave/build/pyontutils/nifstd/", develop = true}
+pyontutils = {path = "/Users/dave/build/pyontutils/", develop = true}
