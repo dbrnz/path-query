@@ -1,6 +1,7 @@
 from pprint import pprint
 import requests
 
+from nifstd_tools.simplify import apinat_deblob
 from nifstd_tools.simplify import ematch, sub, pred, obj, endIn, fasIn, layerIn, ie, ext
 
 
@@ -58,8 +59,9 @@ def lay_reg(start):
       return out
 
 
-blob = query('ilxtr:neuron-type-keast-5')
+blob_raw = query('ilxtr:neuron-type-keast-5')
 
+blob, *_ = apinat_deblob(blob_raw)
 
 starts = [obj(e) for e in blob['edges'] if pred(e, 'apinatomy:lyphs')]
 
