@@ -1,78 +1,117 @@
+#===============================================================================
+
 from pprint import pprint
+
+import matplotlib.pyplot as plt
+import networkx as nx
 import requests
 
-from nifstd_tools.simplify import apinat_deblob
-from nifstd_tools.simplify import ematch, sub, pred, obj, endIn, fasIn, layerIn, ie, ext
+#===============================================================================
+
+import nifstd_tools.simplify as nif
+
+#===============================================================================
+
+class Connectivity(object):
+    LYPHS = 'apinatomy:lyphs'
+    NEXT = 'apinatomy:next'
+    NEXTS = 'apinatomy:next*'
+    INTERNALS = 'apinatomy:internalIn'
+
+    def __init__(self, endpoint):
+        self.__endpoint = endpoint
+
+    def query(self, neuron_population_id):
+        url = f'{self.__endpoint}/dynamic/demos/apinat/neru-4/{neuron_population_id}.json?limit=9999999'
+        response = requests.get(url, headers={'Accept': 'application/json'})
+        return response.json()
+
+    @staticmethod
+    def isLayer(s, blob):
+        return nif.ematch(blob, (lambda e, m: nif.sub(e, m) and nif.pred(e, nif.layerIn)), s)
+
+    @staticmethod
+    def layer_regions(start, blob):
+        direct = [nif.obj(t) for t in
+                  nif.ematch(blob, (lambda e, m: nif.sub(e, m)
+                                    and (nif.pred(e, Connectivity.INTERNALS) or
+                                         nif.pred(e, nif.endIn) or
+                                         nif.pred(e, nif.fasIn))),
+                             start)]
+        layers = [nif.obj(t) for d in direct for t in
+                  nif.ematch(blob, (lambda e, m: nif.sub(e, m)
+                                    and Connectivity.isLayer(m, blob)
+                                    and (nif.pred(e, nif.ie) or
+                                         nif.pred(e, nif.ext))),
+                             d)]
+        lregs = []
+        if layers:
+            ldir = [nif.obj(t) for d in direct for t in
+                    nif.ematch(blob, (lambda e, m: nif.sub(e, m)
+                                      and nif.pred(e, nif.layerIn)),
+                               d)]
+            lregs = [nif.obj(t) for d in ldir for t in
+                     nif.ematch(blob, (lambda e, m: nif.sub(e, m)
+                                       and not Connectivity.isLayer(m, blob)
+                                       and (nif.pred(e, nif.ie) or
+                                            nif.pred(e, nif.ext))),
+                                d)]
+        regions = [nif.obj(t) for d in direct for t in
+                   nif.ematch(blob, (lambda e, m: nif.sub(e, m)
+                                     and not Connectivity.isLayer(m, blob)
+                                     and (nif.pred(e, nif.ie) or
+                                          nif.pred(e, nif.ext))),
+                              d)]
+        assert not (lregs and regions), (lregs, regions)  # not both
+        regions = lregs if lregs else regions
+        return start, layers[0] if layers else None, regions[0] if regions else None
 
 
-def query(neupop_id):
-    url = ('http://sparc-data.scicrunch.io:9000/scigraph/dynamic/'
-           f'demos/apinat/neru-4/{neupop_id}.json?limit=9999999')
-    resp = requests.get(url, headers={'Accept': 'application/json'})
-    blob = resp.json()
-    return blob
+    def connectivity(self, neuron_population_id):
+        blob_raw = self.query(neuron_population_id)
+        blob, *_ = nif.apinat_deblob(blob_raw)
+        starts = [nif.obj(e) for e in blob['edges'] if nif.pred(e, Connectivity.LYPHS)]
+        nexts = [(nif.sub(t), nif.obj(t)) for start in starts for t in
+                  nif.ematch(blob, (lambda e, m: nif.pred(e, Connectivity.NEXT)
+                                              or nif.pred(e, Connectivity.NEXTS)), None)]
 
-def isLayer(s):
-    return ematch(blob, (lambda e, m: sub(e, m) and pred(e, layerIn)), s)
+        #indexed = []
+        #for n, p in enumerate(nexts):
+        #    for m, e in enumerate(p):
+        #        indexed.append(self.layer_regions(e, blob) + (m, ))
+        #print('Indexed:')
+        #pprint(sorted(set(indexed)))
 
+        connected_pairs = sorted(set([tuple([self.layer_regions(e, blob) for e in p]) for p in nexts]))
+        #print('Connected pairs:')
+        #pprint(connected_pairs)
 
-def lay_reg(start):
-    direct = [obj(t) for t in
-              ematch(blob, (lambda e, m: sub(e, m)
-                            and (pred(e, intIn) or
-                                 pred(e, endIn) or
-                                 pred(e, fasIn))),
-                     start)]
+        return connected_pairs
 
-    layers = [obj(t) for d in direct for t in
-              ematch(blob, (lambda e, m: sub(e, m)
-                            and isLayer(m)
-                            and (pred(e, ie) or
-                                 pred(e, ext))),
-                     d)]
+    @staticmethod
+    def node_id(connected_node):
+        return '\n'.join([str(k) for k in connected_node[1:]])
 
-    lregs = []
-    if layers:
-        ldir = [obj(t) for d in direct for t in
-                ematch(blob, (lambda e, m: sub(e, m)
-                              and pred(e, layerIn)),
-                       d)]
+    def draw_connectivity_graph(self, neuron_population_id):
+        pairs = self.connectivity(neuron_population_id)
+        G = nx.Graph()
+        for pair in pairs:
+            nodes = (self.node_id(pair[0]), self.node_id(pair[1]))
+            if (nodes[0] != nodes[1]):
+                G.add_edge(*nodes)
+        plt.figure()
+        nx.draw_kamada_kawai(G, with_labels=True, node_color='#80F0F0', font_size=8)
 
-        lregs = [obj(t) for d in ldir for t in
-                 ematch(blob, (lambda e, m: sub(e, m)
-                               and not isLayer(m)
-                               and (pred(e, ie) or
-                                    pred(e, ext))),
-                        d)]
+        pdf_file = f"{neuron_population_id.split(':')[-1]}.pdf"
+        print(f'Saving {neuron_population_id} to {pdf_file}')
+        plt.savefig(pdf_file)
 
-    regions = [obj(t) for d in direct for t in
-               ematch(blob, (lambda e, m: sub(e, m)
-                             and not isLayer(m)
-                             and (pred(e, ie) or
-                                  pred(e, ext))),
-                      d)]
+#===============================================================================
 
-    assert not (lregs and regions), (lregs, regions)  # not both
-    regions = lregs if lregs else regions
-    out = start, layers[0] if layers else None, regions[0] if regions else None
-    if out:
-      return out
+if __name__ == '__main__':
 
+    connectivity = Connectivity('http://sparc-data.scicrunch.io:9000/scigraph')
+    for pop_id in range(1, 13):
+        connectivity.draw_connectivity_graph(f'ilxtr:neuron-type-keast-{pop_id}')
 
-blob_raw = query('ilxtr:neuron-type-keast-5')
-
-blob, *_ = apinat_deblob(blob_raw)
-
-starts = [obj(e) for e in blob['edges'] if pred(e, 'apinatomy:lyphs')]
-
-nxt = 'apinatomy:next'
-nxts = 'apinatomy:next*'
-intIn = 'apinatomy:internalIn'
-
-nexts = [(sub(t), obj(t)) for start in starts for t in
-         ematch(blob, (lambda e, m: pred(e, nxt) or pred(e, nxts)), None)]
-
-
-connected_pairs = sorted(set([tuple([lay_reg(e) for e in p]) for p in nexts]))
-pprint(connected_pairs)
-connected_pairs
+#===============================================================================
