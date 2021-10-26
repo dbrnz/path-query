@@ -1,5 +1,6 @@
 #===============================================================================
 
+import logging
 from pprint import pprint
 
 import matplotlib.pyplot as plt
@@ -20,6 +21,11 @@ class Connectivity(object):
 
     def __init__(self, endpoint):
         self.__endpoint = endpoint
+        self.__known_terms = set()
+
+    @property
+    def known_terms(self):
+        return sorted(list(self.__known_terms))
 
     def query(self, neuron_population_id):
         url = f'{self.__endpoint}/dynamic/demos/apinat/neru-4/{neuron_population_id}.json?limit=9999999'
@@ -88,30 +94,66 @@ class Connectivity(object):
 
         return connected_pairs
 
-    @staticmethod
-    def node_id(connected_node):
-        return '\n'.join([str(k) for k in connected_node[1:]])
+    def node_id(self, connected_node):
+        names = []
+        for term in connected_node[1:]:
+            if term is not None:
+                self.__known_terms.add(term)
+            names.append(str(term))
+        return '\n'.join(names)
 
-    def draw_connectivity_graph(self, neuron_population_id):
+    def connectivity_graph(self, neuron_population_id, pdf=True, text=False):
         pairs = self.connectivity(neuron_population_id)
-        G = nx.Graph()
+        G = nx.DiGraph()
+        if text:
+            print(neuron_population_id)
+        n = 0
         for pair in pairs:
             nodes = (self.node_id(pair[0]), self.node_id(pair[1]))
+#            print(f'    {pair[0]}  --->  {pair[1]}')
             if (nodes[0] != nodes[1]):
-                G.add_edge(*nodes)
-        plt.figure()
-        nx.draw_kamada_kawai(G, with_labels=True, node_color='#80F0F0', font_size=8)
+                G.add_edge(*nodes, directed=True, id=n)
+                n += 1
+#        print('Edges:')
+        for edge in G.edges:
+            node0 = edge[0].replace('\n', ', ')
+            node1 = edge[1].replace('\n', ', ')
+            if text:
+                print(f'    ({node0})  --->  ({node1})')
+        if text:
+            print('')
 
-        pdf_file = f"{neuron_population_id.split(':')[-1]}.pdf"
-        print(f'Saving {neuron_population_id} to {pdf_file}')
-        plt.savefig(pdf_file)
+        if (pdf):
+            plt.figure()
+            nx.draw(G, with_labels=True, node_color='#80F0F0', font_size=6)
+            #nx.draw_spring(G, with_labels=True, node_color='#80F0F0', font_size=6)
+            pdf_file = f"{neuron_population_id.split(':')[-1]}.pdf"
+            if not text:
+                print(f'Saving {neuron_population_id} to {pdf_file}')
+            plt.savefig(pdf_file)
+        return G
 
 #===============================================================================
 
 if __name__ == '__main__':
 
     connectivity = Connectivity('http://sparc-data.scicrunch.io:9000/scigraph')
-    for pop_id in range(1, 13):
-        connectivity.draw_connectivity_graph(f'ilxtr:neuron-type-keast-{pop_id}')
+    nodes = set()
+    for pop_id in range(7, 8):
+        G = connectivity.connectivity_graph(f'ilxtr:neuron-type-keast-{pop_id}', pdf=False, text=False)
+        nodes.update(set(G.nodes))
+    for node in sorted(nodes):
+        n = node.replace('\n', ', ')
+        print(f"({n})")
+    """
+    logging.basicConfig(level=logging.ERROR)
+
+    knowledgestore = KnowledgeStore('.')
+    for term in connectivity.known_terms:
+        knowledge = knowledgestore.entity_knowledge(term)
+        label = knowledge.get('label')
+        if label == term: label = '** UNKNOWN **'
+        print(f'{term}\t{label}')
+    """
 
 #===============================================================================
