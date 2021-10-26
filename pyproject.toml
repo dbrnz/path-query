@@ -13,3 +13,7 @@ rdflib = "*"
 pyxattr = {path = "/Users/dave/build/pyxattr/"}
 nifstd-tools = {path = "/Users/dave/build/pyontutils/nifstd/", develop = true}
 pyontutils = {path = "/Users/dave/build/pyontutils/", develop = true}
+matplotlib = "^3.4.3"
+scipy = {version = "^1.7.1", python = ">=3.8,<3.10"}
+jupyterlab = "^3.1.18"
+ipycytoscape = "^1.2.2"
