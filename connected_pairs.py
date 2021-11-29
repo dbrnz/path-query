@@ -14,10 +14,13 @@ import nifstd_tools.simplify as nif
 #===============================================================================
 
 class Connectivity(object):
+    ANNOTATES = 'apinatomy:annotates'
+    CLONEOF = 'apinatomy:cloneOf'
+    INTERNALIN = 'apinatomy:internalIn'
     LYPHS = 'apinatomy:lyphs'
     NEXT = 'apinatomy:next'
     NEXTS = 'apinatomy:next*'
-    INTERNALS = 'apinatomy:internalIn'
+    PUBLICATIONS = 'apinatomy:publications'
 
     def __init__(self, endpoint):
         self.__endpoint = endpoint
@@ -28,27 +31,71 @@ class Connectivity(object):
         return sorted(list(self.__known_terms))
 
     def query(self, neuron_population_id):
-        url = f'{self.__endpoint}/dynamic/demos/apinat/neru-4/{neuron_population_id}.json?limit=9999999'
+        url = f'{self.__endpoint}/dynamic/demos/apinat/neru-5/{neuron_population_id}.json?limit=9999999'
         response = requests.get(url, headers={'Accept': 'application/json'})
         return response.json()
 
     @staticmethod
-    def isLayer(s, blob):
+    def isLayer(blob, s):
         return nif.ematch(blob, (lambda e, m: nif.sub(e, m) and nif.pred(e, nif.layerIn)), s)
 
     @staticmethod
-    def layer_regions(start, blob):
+    def reclr(blob, start_link):
+        # recurse up the hierarchy until fasIn endIn intIn terminates
+        collect = []
+        layer = []
+        col = True
+
+        def select_ext(e, m, collect=collect):
+            nonlocal col
+            if nif.sub(e, m):
+                if nif.pred(e, Connectivity.CLONEOF):  # should be zapped during simplify
+                    return nif.ematch(blob, select_ext, nif.obj(e))
+                if (nif.pred(e, nif.ext)
+                 or nif.pred(e, nif.ie)
+                 or nif.pred(e, nif.ies)):
+                    external = nif.obj(e)
+                    if col:
+                        if layer:
+                            l = layer.pop()
+                        else:
+                            l = None
+                        r = [b for b in blob['nodes'] if b['id'] == external][0]['id']  # if this is empty we are in big trouble
+                        collect.append((l, r))
+                    else:
+                        l = [b for b in blob['nodes'] if b['id'] == external][0]['id']
+                        layer.append(l)
+                    return external
+
+        def select(e, m):
+            nonlocal col
+            if nif.sub(e, m):
+                if (nif.pred(e, nif.layerIn)
+                 or nif.pred(e, nif.fasIn)
+                 or nif.pred(e, nif.endIn)
+                 or nif.pred(e, Connectivity.INTERNALIN)):
+                    col = not Connectivity.isLayer(blob, nif.obj(e))
+                    nif.ematch(blob, select_ext, nif.obj(e))
+                    nif.ematch(blob, select, nif.obj(e))
+
+        nif.ematch(blob, select, start_link)
+
+        return collect
+
+    @staticmethod
+    def layer_regions(blob, start):
         direct = [nif.obj(t) for t in
                   nif.ematch(blob, (lambda e, m: nif.sub(e, m)
-                                    and (nif.pred(e, Connectivity.INTERNALS) or
-                                         nif.pred(e, nif.endIn) or
-                                         nif.pred(e, nif.fasIn))),
+                                    and (nif.pred(e, Connectivity.INTERNALIN)
+                                      or nif.pred(e, nif.endIn)
+                                      or nif.pred(e, nif.fasIn))),
                              start)]
         layers = [nif.obj(t) for d in direct for t in
                   nif.ematch(blob, (lambda e, m: nif.sub(e, m)
-                                    and Connectivity.isLayer(m, blob)
-                                    and (nif.pred(e, nif.ie) or
-                                         nif.pred(e, nif.ext))),
+                                    and Connectivity.isLayer(blob, m)
+                                    and (nif.pred(e, nif.ie)
+                                      or nif.pred(e, nif.ies)
+                                      or nif.pred(e, nif.ext))),
                              d)]
         lregs = []
         if layers:
@@ -58,20 +105,23 @@ class Connectivity(object):
                                d)]
             lregs = [nif.obj(t) for d in ldir for t in
                      nif.ematch(blob, (lambda e, m: nif.sub(e, m)
-                                       and not Connectivity.isLayer(m, blob)
-                                       and (nif.pred(e, nif.ie) or
-                                            nif.pred(e, nif.ext))),
+                                       and not Connectivity.isLayer(blob, m)
+                                       and (nif.pred(e, nif.ie)
+                                         or nif.pred(e, nif.ext))),
                                 d)]
         regions = [nif.obj(t) for d in direct for t in
                    nif.ematch(blob, (lambda e, m: nif.sub(e, m)
-                                     and not Connectivity.isLayer(m, blob)
-                                     and (nif.pred(e, nif.ie) or
-                                          nif.pred(e, nif.ext))),
+                                     and not Connectivity.isLayer(blob, m)
+                                     and (nif.pred(e, nif.ie)
+                                       or nif.pred(e, nif.ies)
+                                       or nif.pred(e, nif.ext))),
                               d)]
+
+        lrs = Connectivity.reclr(blob, start)
+
         assert not (lregs and regions), (lregs, regions)  # not both
         regions = lregs if lregs else regions
-        return start, layers[0] if layers else None, regions[0] if regions else None
-
+        return start, tuple(lrs)
 
     def connectivity(self, neuron_population_id):
         blob_raw = self.query(neuron_population_id)
@@ -88,7 +138,7 @@ class Connectivity(object):
         #print('Indexed:')
         #pprint(sorted(set(indexed)))
 
-        connected_pairs = sorted(set([tuple([self.layer_regions(e, blob) for e in p]) for p in nexts]))
+        connected_pairs = sorted(set([tuple([self.layer_regions(blob, e) for e in p]) for p in nexts]))
         #print('Connected pairs:')
         #pprint(connected_pairs)
 
