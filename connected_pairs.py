@@ -24,11 +24,6 @@ class Connectivity(object):
 
     def __init__(self, endpoint):
         self.__endpoint = endpoint
-        self.__known_terms = set()
-
-    @property
-    def known_terms(self):
-        return sorted(list(self.__known_terms))
 
     def query(self, neuron_population_id):
         url = f'{self.__endpoint}/dynamic/demos/apinat/neru-5/{neuron_population_id}.json?limit=9999999'
@@ -147,8 +142,6 @@ class Connectivity(object):
     def node_id(self, connected_node):
         names = []
         for term in connected_node[1:]:
-            if term is not None:
-                self.__known_terms.add(term)
             names.append(str(term))
         return '\n'.join(names)
 
